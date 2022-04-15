@@ -1,12 +1,10 @@
 ---
-sidebar_position: 2
+sidebar_position: 3
 ---
 
 # StarNFT
 
-Contract repo: [https://github.com/ProjectGalaxyHQ/galaxy-contracts](https://github.com/ProjectGalaxyHQ/galaxy-contracts)
-
-Contract technical specifications: [https://github.com/ProjectGalaxyHQ/galaxy-contracts/blob/main/SPECIFICATION.md](https://github.com/ProjectGalaxyHQ/galaxy-contracts/blob/main/SPECIFICATION.md)
+> This page is still in progress
 
 ## Contract Address:
 
