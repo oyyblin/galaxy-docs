@@ -70,6 +70,11 @@ mutation {
 6. reomve, remove items in the list.
 7. body: items string array(address or email) to be modified, refer to operation.
 
+### Example - Postman
+
+![Example 1](./assets/example-1.png)
+![Example 2](./assets/example-2.png)
+
 ### Example - Node.js
 
 ```typescript

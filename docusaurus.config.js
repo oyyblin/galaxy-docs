@@ -45,6 +45,9 @@ const config = {
         disableSwitch: true,
         respectPrefersColorScheme: false,
       },
+      // announcementBar: {
+      //   content: "wow",
+      // },
       navbar: {
         logo: {
           src: "img/logo.svg",
@@ -93,8 +96,8 @@ const config = {
         // needed because we use 4-graphql-api with alias graphql-api
         linkRoot: "../..",
         loaders: {
-          UrlLoader: "@graphql-tools/url-loader"
-        }
+          UrlLoader: "@graphql-tools/url-loader",
+        },
       },
     ],
   ],
