@@ -1,0 +1,2475 @@
+#
+type Address {
+  #
+  id: String!
+
+  #
+  address: String!
+
+  #
+  username: String!
+
+  #
+  hasEmail: Boolean!
+
+  #
+  hasTwitter: Boolean!
+
+  #
+  email: String!
+
+  #
+  avatar: String!
+
+  #
+  solanaAddress: String!
+
+  #
+  twitterUserID: String!
+
+  #
+  twitterUserName: String!
+
+  #
+  participatedCampaignIDs: [Int!]
+
+  #
+  private(sig: String!): PrivateInfo!
+
+  #
+  eligibleCredentials(first: Int = 0, after: String = ""): CredConnection!
+
+  #
+  balance(chain: Chain!, block: Int!): String!
+
+  #
+  spaces(input: ListSpaceInput): SpaceConnection!
+
+  #
+  isVerified: Boolean!
+
+  #
+  nfts(option: ListNFTInput!): NFTConnection!
+
+  #
+  recentParticipation(input: ListParticipationInput!): ParticipationConnection!
+
+  #
+  participatedCampaignCount(input: ParticipatedCampaignCountInput!): Int!
+}
+
+#
+type AddressConnection {
+  #
+  totalCount: Int!
+
+  #
+  edges: [AddressEdge!]!
+
+  #
+  pageInfo: PageInfo!
+
+  #
+  list: [Address!]!
+}
+
+#
+type AddressEdge {
+  #
+  node: Address!
+
+  #
+  cursor: String!
+}
+
+#
+type Airdrop {
+  #
+  name: String!
+
+  #
+  contractAddress: String!
+
+  #
+  airdropType: AirdropType!
+
+  #
+  token: Token!
+
+  #
+  merkleTreeUrl: String!
+
+  #
+  addressInfo(address: String!): AirdropAddressInfo
+}
+
+#
+type AirdropAddressInfo {
+  #
+  address: Address!
+
+  #
+  index: Int!
+
+  #
+  amount: TokenAmount!
+
+  #
+  proofs: [String!]!
+}
+
+#
+enum AirdropType {
+  #
+  MerkleProof
+}
+
+#
+type Announcement {
+  #
+  id: Int!
+
+  #
+  title: String!
+
+  #
+  url: String!
+
+  #
+  assignedDate: String!
+}
+
+#
+input Auth {
+  #
+  accessToken: String
+
+  #
+  signature: String
+
+  #
+  message: String
+}
+
+#
+type Campaign implements Node {
+  #
+  id: ID!
+
+  #
+  numberID: Int!
+
+  #
+  name: String!
+
+  #
+  type: GamificationType!
+
+  #
+  status: CampaignStatus!
+
+  #
+  description: String!
+
+  #
+  thumbnail: String!
+
+  #
+  numNFTMinted: Int
+
+  #
+  gasType: GasType!
+
+  #
+  startTime: Int
+
+  #
+  endTime: Int
+
+  #
+  parentCampaign: Campaign
+
+  #
+  childrenCampaigns: [Campaign!]
+
+  #
+  holders(first: Int, after: String): AddressConnection!
+
+  #
+  cap: Int!
+
+  #
+  blacklistCountryCodes: String!
+
+  #
+  createdAt: String!
+
+  #
+  space: Space!
+
+  #
+  nftCore: NFTCore!
+
+  #
+  nftTemplates: [NFTTemplate!]
+
+  #
+  forgeConfig: ForgeConfig
+
+  #
+  enableWhitelist: Boolean!
+
+  #
+  requireEmail: Boolean!
+
+  #
+  requireUsername: Boolean!
+
+  #
+  creator: String!
+
+  #
+  chain: Chain!
+
+  #
+  dao: DAO!
+
+  #
+  info: String!
+
+  #
+  requirementInfo: String!
+
+  #
+  whitelistInfo(address: String!): WhitelistAddress!
+
+  #
+  gamification: Gamification! @deprecated(reason: "Use nftTemplates instead")
+
+  #
+  whitelistSubgraph: SubGraph
+
+  #
+  isPrivate: Boolean!
+
+  #
+  useCred: Boolean!
+
+  #
+  claimedTimes(address: String!): Int!
+
+  #
+  formula: String!
+
+  #
+  creds: [Cred!]!
+}
+
+#
+type CampaignCarousel implements Carousel {
+  #
+  objectType: CarouselObjectType!
+
+  #
+  objectID: Int!
+
+  #
+  object: Campaign!
+}
+
+#
+type CampaignConnection {
+  #
+  totalCount: Int!
+
+  #
+  edges: [CampaignEdge!]!
+
+  #
+  pageInfo: PageInfo!
+
+  #
+  list: [Campaign!]!
+}
+
+#
+type CampaignEdge {
+  #
+  node: Campaign!
+
+  #
+  cursor: String!
+}
+
+#
+input CampaignInput {
+  #
+  id: ID
+
+  #
+  daoId: Int!
+
+  #
+  nftCoreId: Int!
+
+  #
+  name: String!
+
+  #
+  description: String!
+
+  #
+  thumbnail: String!
+
+  #
+  startTime: Int
+
+  #
+  endTime: Int
+
+  #
+  status: CampaignStatus!
+
+  #
+  parentId: Int
+
+  #
+  formula: String!
+
+  #
+  cap: Int!
+
+  #
+  gasType: GasType!
+
+  #
+  isPrivate: Boolean!
+
+  #
+  type: GamificationType!
+}
+
+#
+enum CampaignStatus {
+  #
+  Draft
+
+  #
+  Active
+
+  #
+  NotStarted
+
+  #
+  Expired
+
+  #
+  CapReached
+
+  #
+  Deleted
+}
+
+#
+interface Carousel {
+  #
+  objectType: CarouselObjectType!
+
+  #
+  objectID: Int!
+}
+
+#
+enum CarouselObjectType {
+  #
+  Dao
+
+  #
+  Campaign
+
+  #
+  Link
+}
+
+#
+enum Chain {
+  #
+  ETHEREUM
+
+  #
+  ROPSTEN
+
+  #
+  KOVAN
+
+  #
+  RINKEBY
+
+  #
+  GOERLI
+
+  #
+  BSC
+
+  #
+  BSC_TESTNET
+
+  #
+  MATIC
+
+  #
+  MUMBAI
+
+  #
+  XDAI
+
+  #
+  ARBITRUM
+
+  #
+  ARBITRUM_TESTNET
+
+  #
+  HECO
+
+  #
+  HECO_TESTNET
+
+  #
+  FANTOM
+
+  #
+  FANTOM_TESTNET
+
+  #
+  AVALANCHE
+
+  #
+  AVALANCHE_TESTNET
+
+  #
+  SOLANA
+
+  #
+  SOLANA_DEVNET
+}
+
+#
+type Cred {
+  #
+  id: String!
+
+  #
+  name: String!
+
+  #
+  description: String!
+
+  #
+  chain: Chain!
+
+  #
+  type: String!
+    @deprecated(reason: "Use `cred.credType and cred.credSource` instead")
+
+  #
+  curatorAddress: String!
+
+  #
+  referenceLink: String!
+
+  #
+  staticEligible(value: String!): Int!
+
+  #
+  itemCount: Int!
+
+  #
+  subgraph: CredSubgraph
+
+  #
+  items(
+    first: Int = 20
+    after: String = ""
+    searchString: String = ""
+  ): CredItemConnection!
+
+  #
+  lastUpdate: Int!
+
+  #
+  syncRate: Float!
+
+  #
+  credType: CredType!
+
+  #
+  credSource: CredSource!
+}
+
+#
+type CredConnection {
+  #
+  totalCount: Int!
+
+  #
+  edges: [CredEdge!]!
+
+  #
+  pageInfo: PageInfo!
+
+  #
+  list: [Cred!]!
+}
+
+#
+type CredEdge {
+  #
+  node: Cred!
+
+  #
+  cursor: String!
+}
+
+#
+input CredInput {
+  #
+  id: Int
+
+  #
+  name: String!
+
+  #
+  description: String!
+
+  #
+  chain: Chain!
+
+  #
+  credType: CredType!
+
+  #
+  curatorAddress: String!
+
+  #
+  referenceLink: String!
+
+  #
+  credSource: CredSource!
+}
+
+#
+type CredItemConnection {
+  #
+  totalCount: Int!
+
+  #
+  edges: [CredItemEdge!]!
+
+  #
+  pageInfo: PageInfo!
+
+  #
+  list: [String!]!
+}
+
+#
+type CredItemEdge {
+  #
+  node: String!
+
+  #
+  cursor: String!
+}
+
+#
+enum CredSource {
+  #
+  CSV
+
+  #
+  SUBGRAPH
+
+  #
+  GRAPHQL
+
+  #
+  REST
+
+  #
+  TWITTER_FOLLOW
+
+  #
+  TWITTER_RT
+
+  #
+  TWITTER_LIKE
+}
+
+#
+type CredSubgraph {
+  #
+  endpoint: String!
+
+  #
+  query: String!
+
+  #
+  expression: String!
+
+  #
+  eligible(address: String!): Int!
+}
+
+#
+enum CredType {
+  #
+  EVM_ADDRESS
+
+  #
+  SOLANA_ADDRESS
+
+  #
+  EMAIL
+
+  #
+  TWITTER
+
+  #
+  GITHUB
+
+  #
+  DISCORD
+}
+
+#
+type DAO implements Node {
+  #
+  id: ID!
+
+  #
+  name: String!
+
+  #
+  info: String!
+
+  #
+  symbol: String!
+
+  #
+  logo: String!
+
+  #
+  alias: String!
+
+  #
+  homepage: String
+
+  #
+  twitter: String
+
+  #
+  github: String
+
+  #
+  discord: String
+
+  #
+  medium: String
+
+  #
+  telegram: String
+
+  #
+  facebook: String
+
+  #
+  storeOpensea: String
+
+  #
+  storeTreasureLand: String
+
+  #
+  storeElement: String
+
+  #
+  campaigns(first: Int, after: String): CampaignConnection!
+
+  #
+  nftCores(first: Int, after: String): NFTCoreConnection!
+
+  #
+  isVerified: Boolean!
+}
+
+#
+type DaoCarousel implements Carousel {
+  #
+  objectType: CarouselObjectType!
+
+  #
+  objectID: Int!
+
+  #
+  object: DAO!
+}
+
+#
+input DeleteSocialAccountInput {
+  #
+  sig: String!
+
+  #
+  address: String!
+
+  #
+  type: SocialAccountType!
+}
+
+#
+type Error {
+  #
+  code: Int!
+
+  #
+  message: String!
+}
+
+#
+type ExtLinkResp {
+  #
+  success: Boolean!
+
+  #
+  error: String
+
+  #
+  data: String
+}
+
+#
+type ForgeConfig {
+  #
+  minNFTCount: Int!
+
+  #
+  maxNFTCount: Int!
+
+  #
+  requiredNFTs: [ForgeNFT!]!
+}
+
+#
+type ForgeNFT {
+  #
+  nft: NFTTemplate!
+
+  #
+  count: Int!
+}
+
+#
+type FuncInfo {
+  #
+  funcName: String!
+
+  #
+  nftCoreAddress: String!
+
+  #
+  verifyIDs: [Int!]!
+
+  #
+  powahs: [Int!]!
+
+  #
+  burnedNFTIDs: [Int!]
+
+  #
+  cap: Int
+}
+
+#
+type GalaxyNews {
+  #
+  id: Int!
+
+  #
+  title: String!
+
+  #
+  url: String!
+
+  #
+  description: String!
+
+  #
+  publishDate: String!
+
+  #
+  imageUrl: String!
+}
+
+#
+type Gamification {
+  #
+  id: ID!
+
+  #
+  type: GamificationType!
+
+  #
+  nfts: [GamificationNFT!]!
+
+  #
+  forgeConfig: ForgeConfig
+
+  #
+  airdrop: Airdrop
+}
+
+#
+type GamificationNFT {
+  #
+  nft: NFTTemplate!
+
+  #
+  probability: Int!
+
+  #
+  minPowahBuff: Int
+
+  #
+  maxPowahBuff: Int
+
+  #
+  forgeMinPowahSum: Int
+
+  #
+  forgeMaxPowahSum: Int
+}
+
+#
+enum GamificationType {
+  #
+  Drop
+
+  #
+  MysteryBox
+
+  #
+  Forge
+
+  #
+  MysteryBoxWR
+
+  #
+  Airdrop
+
+  #
+  ExternalLink
+
+  #
+  OptIn
+
+  #
+  OptInEmail
+
+  #
+  PowahDrop
+
+  #
+  Parent
+
+  #
+  Oat
+}
+
+#
+enum GasType {
+  #
+  Gas
+
+  #
+  Gasless
+}
+
+#
+type LinkCarousel implements Carousel {
+  #
+  objectType: CarouselObjectType!
+
+  #
+  objectID: Int!
+
+  #
+  title: String!
+
+  #
+  image: String!
+
+  #
+  url: String!
+}
+
+#
+input ListCampaignInput {
+  #
+  ids: [ID!]
+
+  #
+  listType: ListType
+
+  #
+  searchString: String
+
+  #
+  statuses: [CampaignStatus!]
+
+  #
+  chains: [Chain!]
+
+  #
+  types: [GamificationType!]
+
+  #
+  permissions: [Permission!]
+
+  #
+  first: Int
+
+  #
+  after: String
+
+  #
+  status: CampaignStatus
+}
+
+#
+input ListCredInput {
+  #
+  ids: [Int!]
+
+  #
+  listType: ListType
+
+  #
+  searchString: String
+
+  #
+  userAddr: String
+
+  #
+  types: [CredType!]
+
+  #
+  chains: [Chain!]
+
+  #
+  first: Int
+
+  #
+  after: String
+}
+
+#
+input ListNFTCoreInput {
+  #
+  first: Int
+
+  #
+  after: String
+}
+
+#
+input ListNFTInput {
+  #
+  nftCoreAddress: String
+
+  #
+  orderBy: ListNFTOrderBy!
+
+  #
+  order: ListOrder!
+
+  #
+  first: Int
+
+  #
+  after: String
+
+  #
+  chain: Chain
+
+  #
+  daoID: Int
+
+  #
+  categories: [String!]
+}
+
+#
+enum ListNFTOrderBy {
+  #
+  ID
+
+  #
+  Powah
+
+  #
+  CreateTime
+}
+
+#
+enum ListOrder {
+  #
+  DESC
+
+  #
+  ASC
+}
+
+#
+input ListParticipationInput {
+  #
+  first: Int = 10
+
+  #
+  after: String = ""
+
+  #
+  campaignID: Int
+
+  #
+  onlyGasless: Boolean! = false
+
+  #
+  onlyVerified: Boolean! = false
+}
+
+#
+input ListSpaceInput {
+  #
+  ids: [Int!]
+
+  #
+  listType: ListType
+
+  #
+  searchString: String
+
+  #
+  first: Int
+
+  #
+  after: String
+}
+
+#
+input ListSpaceStationInput {
+  #
+  first: Int
+
+  #
+  after: String
+
+  #
+  chains: [Chain!]
+}
+
+#
+enum ListType {
+  #
+  Newest
+
+  #
+  Earliest
+
+  #
+  Trending
+}
+
+#
+type MetaTxResp {
+  #
+  metaSig2: String!
+
+  #
+  autoTaskUrl: String!
+
+  #
+  metaSpaceAddr: String!
+
+  #
+  forwarderAddr: String!
+
+  #
+  metaTxHash: String!
+
+  #
+  reqQueueing: Boolean!
+}
+
+#
+input MutateCampaignInput {
+  #
+  auth: Auth!
+
+  #
+  campaign: CampaignInput!
+
+  #
+  nftTemplates: [NFTTemplateInput!]
+
+  #
+  children: [Int!]
+}
+
+#
+input MutateCredInput {
+  #
+  auth: Auth!
+
+  #
+  cred: CredInput!
+}
+
+#
+input MutateCredItemInput {
+  #
+  auth: Auth!
+
+  #
+  credId: Int!
+
+  #
+  operation: Operation!
+
+  #
+  items: [String!]!
+}
+
+#
+input MutateNFTCoreInput {
+  #
+  auth: Auth!
+
+  #
+  nftCore: NFTCoreInput!
+}
+
+#
+input MutateSpaceInput {
+  #
+  auth: Auth!
+
+  #
+  space: SpaceInput!
+}
+
+#
+type Mutation {
+  #
+  prepareParticipate(
+    input: PrepareParticipateInput!
+  ): PreapreParticipateCampaignResp!
+
+  #
+  participate(input: ParticipateInput!): ParticipateCampaignResp!
+
+  #
+  participateSolana(input: ParticipateSolanaInput!): ParticipateSolanaResp!
+
+  #
+  participateSolanaGasCampaign(
+    input: ParticipateSolanaGasCampaignInput!
+  ): ParticipateSolanaGasCampaignResp!
+
+  #
+  sendVerificationCode(input: SendVerificationEmailInput!): Error
+
+  #
+  updateEmail(input: UpdateEmailInput!): Error
+
+  #
+  removeEmail(input: UpdateEmailInput!): Error
+
+  #
+  updateProfile(input: UpdateProfileInput!): Error
+
+  #
+  updateSolanaAddress(input: UpdateSolanaAddressInput!): Error
+
+  #
+  updateEthAddress(input: UpdateEthAddressInput!): Error
+
+  #
+  removeSolanaAddress(input: UpdateSolanaAddressInput!): Error
+
+  #
+  removeEthAddress(input: UpdateEthAddressInput!): Error
+
+  #
+  verifyTwitterAccount(
+    input: VerifyTwitterAccountInput!
+  ): VerifyTwitterAccountInfo!
+
+  #
+  verifyDiscordAccount(
+    input: VerifyDiscordAccountInput!
+  ): VerifyDiscordAccountInfo!
+
+  #
+  verifyGithubAccount(
+    input: VerifyGithubAccountInput!
+  ): VerifyGithubAccountInfo!
+
+  #
+  deleteSocialAccount(input: DeleteSocialAccountInput!): Error
+
+  #
+  updateAccessToken(input: UpdateAccessTokenInput!): Error
+
+  #
+  campaign(input: MutateCampaignInput!): Campaign!
+
+  #
+  nftCore(input: MutateNFTCoreInput!): NFTCore!
+
+  #
+  credential(input: MutateCredInput): Cred!
+
+  #
+  credentialItems(input: MutateCredItemInput!): Cred!
+
+  #
+  modifyCredItems(input: MutateCredItemInput!): Error
+    @deprecated(reason: "Use credentialItems instead")
+
+  #
+  refreshNFTMetadata(input: RefreshNFTMetadataInput!): Error
+
+  #
+  getUploadPresignURL(input: getPresignURLInput!): PresignURLResp
+
+  #
+  space(input: MutateSpaceInput!): Space!
+}
+
+#
+type NFT implements Node {
+  #
+  id: ID!
+
+  #
+  nftCore: NFTCore!
+
+  #
+  solanaTokenAddress: String!
+
+  #
+  campaign: Campaign!
+
+  #
+  chain: Chain!
+
+  #
+  name: String!
+
+  #
+  image: String!
+
+  #
+  ipfsImage: String
+
+  #
+  category: String!
+
+  #
+  description: String!
+
+  #
+  treasureBack: Boolean!
+
+  #
+  powah: Int!
+
+  #
+  minter: Address!
+
+  #
+  owner: Address!
+
+  #
+  status: NFTStatus!
+
+  #
+  createdAt: String!
+
+  #
+  createBlock: Int!
+
+  #
+  quasarInfo: Quasar
+
+  #
+  superInfo: [Quasar!]!
+
+  #
+  isSuper: Boolean!
+
+  #
+  treasure(sig: String!): NFTTreasure
+
+  #
+  animationURL: String!
+
+  #
+  backgroundColor: String!
+
+  #
+  nftTargetPowah: NFTTargetPowah
+
+  #
+  traits: [Trait!]
+}
+
+#
+type NFTAsset {
+  #
+  token: Token!
+
+  #
+  amount: TokenAmount!
+
+  #
+  releaseBlock: Int!
+}
+
+#
+type NFTConnection {
+  #
+  totalCount: Int!
+
+  #
+  edges: [NFTEdge!]!
+
+  #
+  pageInfo: PageInfo!
+
+  #
+  list: [NFT!]!
+}
+
+#
+type NFTCore implements Node {
+  #
+  id: ID!
+
+  #
+  contractAddress: String!
+
+  #
+  spaceStationAddress: String!
+
+  #
+  name: String!
+
+  #
+  info: String!
+
+  #
+  symbol: String!
+
+  #
+  dao: DAO!
+
+  #
+  chain: Chain!
+
+  #
+  marketLink: String!
+
+  #
+  transferable: Boolean!
+
+  #
+  capable: Boolean!
+
+  #
+  holders(first: Int, after: String): AddressConnection!
+}
+
+#
+type NFTCoreConnection {
+  #
+  totalCount: Int!
+
+  #
+  edges: [NFTCoreEdge!]!
+
+  #
+  pageInfo: PageInfo!
+
+  #
+  list: [NFTCore!]!
+}
+
+#
+type NFTCoreEdge {
+  #
+  node: NFTCore!
+
+  #
+  cursor: String!
+}
+
+#
+input NFTCoreInput {
+  #
+  id: Int
+
+  #
+  daoId: Int!
+
+  #
+  chain: Chain!
+
+  #
+  address: String!
+
+  #
+  name: String!
+
+  #
+  symbol: String!
+
+  #
+  info: String!
+
+  #
+  transferable: Boolean!
+}
+
+#
+type NFTEdge {
+  #
+  node: NFT!
+
+  #
+  cursor: String!
+}
+
+#
+enum NFTStatus {
+  #
+  Alive
+
+  #
+  Burned
+}
+
+#
+type NFTTargetPowah {
+  #
+  target_powah: Int!
+
+  #
+  signature: String!
+}
+
+#
+type NFTTemplate {
+  #
+  id: ID!
+
+  #
+  name: String!
+
+  #
+  image: String!
+
+  #
+  category: String!
+
+  #
+  powah: Int!
+
+  #
+  ipfsImage: String
+
+  #
+  description: String!
+
+  #
+  treasureBack: Boolean!
+
+  #
+  animationURL: String!
+
+  #
+  probability: Int
+
+  #
+  minPowahBuff: Int
+
+  #
+  maxPowahBuff: Int
+
+  #
+  forgeMinPowahSum: Int
+
+  #
+  forgeMaxPowahSum: Int
+
+  #
+  backgroundColor: String!
+
+  #
+  traits: [Trait!]
+
+  #
+  powahBuff: Int!
+
+  #
+  nftCore: NFTCore! @deprecated(reason: "Use `campaign.nftCoreId instead")
+}
+
+#
+input NFTTemplateInput {
+  #
+  id: Int
+
+  #
+  name: String!
+
+  #
+  image: String!
+
+  #
+  category: String
+
+  #
+  powah: Int
+
+  #
+  ipfsImage: String
+
+  #
+  description: String
+
+  #
+  treasureBack: Boolean
+
+  #
+  animationURL: String
+
+  #
+  probability: Int
+
+  #
+  minPowahBuff: Int
+
+  #
+  maxPowahBuff: Int
+
+  #
+  forgeMinPowahSum: Int
+
+  #
+  forgeMaxPowahSum: Int
+
+  #
+  traits: [TraitInput!]
+}
+
+#
+type NFTTreasure {
+  #
+  treasure: String!
+}
+
+#
+type NFTsByOwner {
+  #
+  owner: String!
+
+  #
+  nfts: [NFT!]!
+}
+
+#
+input NFTsOptions {
+  #
+  owners: [String!]!
+
+  #
+  nftCoreAddresses: [String!]!
+
+  #
+  chain: Chain!
+}
+
+#
+interface Node {
+  #
+  id: ID!
+}
+
+#
+enum ObjectType {
+  #
+  Space
+
+  #
+  Campaign
+
+  #
+  NftCore
+
+  #
+  Cred
+
+  #
+  CredItem
+}
+
+#
+enum Operation {
+  #
+  APPEND
+
+  #
+  REMOVE
+
+  #
+  REPLACE
+
+  #
+  CREATE
+
+  #
+  UPDATE
+
+  #
+  DELETE
+}
+
+#
+input OptInInput {
+  #
+  email: String
+}
+
+#
+type PageInfo {
+  #
+  startCursor: String!
+
+  #
+  endCursor: String!
+
+  #
+  hasNextPage: Boolean!
+
+  #
+  hasPreviousPage: Boolean!
+}
+
+#
+type ParticipateCampaignResp {
+  #
+  participated: Boolean!
+
+  #
+  failReason: String
+}
+
+#
+input ParticipateInput {
+  #
+  signature: String!
+
+  #
+  address: String!
+
+  #
+  tx: String!
+
+  #
+  verifyIDs: [Int!]!
+
+  #
+  chain: Chain!
+
+  #
+  campaignID: ID!
+}
+
+#
+input ParticipateSolanaGasCampaignInput {
+  #
+  signedTx: String!
+
+  #
+  address: String!
+
+  #
+  chain: Chain!
+
+  #
+  campaignID: ID!
+
+  #
+  verifyID: Int!
+}
+
+#
+type ParticipateSolanaGasCampaignResp {
+  #
+  success: Boolean!
+
+  #
+  mint: String!
+
+  #
+  updateAuthority: String!
+
+  #
+  explorerUrl: String!
+
+  #
+  signature: String!
+
+  #
+  failReason: String
+}
+
+#
+input ParticipateSolanaInput {
+  #
+  signedTx: String!
+
+  #
+  address: String!
+
+  #
+  chain: Chain!
+
+  #
+  campaignID: ID!
+
+  #
+  verifyID: Int!
+}
+
+#
+type ParticipateSolanaResp {
+  #
+  success: Boolean!
+
+  #
+  mint: String!
+
+  #
+  updateAuthority: String!
+
+  #
+  explorerUrl: String!
+
+  #
+  signature: String!
+
+  #
+  failReason: String
+}
+
+#
+input ParticipatedCampaignCountInput {
+  #
+  onlyVerified: Boolean! = false
+
+  #
+  startTime: Int
+
+  #
+  endTime: Int
+}
+
+#
+type Participation {
+  #
+  id: ID!
+
+  #
+  tx: String!
+
+  #
+  address: Address!
+
+  #
+  chain: Chain!
+
+  #
+  campaign: Campaign!
+
+  #
+  nftCore: NFTCore!
+
+  #
+  status: ParticipationStatus!
+}
+
+#
+type ParticipationConnection {
+  #
+  totalCount: Int!
+
+  #
+  edges: [ParticipationEdge!]!
+
+  #
+  pageInfo: PageInfo!
+
+  #
+  list: [Participation!]!
+}
+
+#
+type ParticipationEdge {
+  #
+  node: Participation!
+
+  #
+  cursor: String!
+}
+
+#
+enum ParticipationStatus {
+  #
+  Generated
+
+  #
+  Pending
+
+  #
+  Success
+
+  #
+  Queueing
+
+  #
+  Failed
+}
+
+#
+enum Permission {
+  #
+  PRIVATE
+
+  #
+  PUBLIC
+}
+
+#
+type PreapreParticipateCampaignResp {
+  #
+  allow: Boolean!
+
+  #
+  disallowReason: String
+
+  #
+  signature: String
+
+  #
+  spaceStation: String
+
+  #
+  mintFuncInfo: FuncInfo
+
+  #
+  extLinkResp: ExtLinkResp
+
+  #
+  metaTxResp: MetaTxResp
+
+  #
+  solanaTxResp: SolanaTxResp
+}
+
+#
+input PrepareParticipateInput {
+  #
+  signature: String!
+
+  #
+  campaignID: ID!
+
+  #
+  address: String!
+
+  #
+  mintCount: Int
+
+  #
+  chain: Chain
+
+  #
+  burnedNFTIDs: [Int!]
+
+  #
+  optIn: OptInInput
+}
+
+#
+type PresignURLResp {
+  #
+  uploadURL: String!
+
+  #
+  resourceURL: String!
+}
+
+#
+type PrivateInfo {
+  #
+  email: String!
+
+  #
+  twitterUserID: String!
+
+  #
+  twitterUserName: String!
+
+  #
+  discordUserID: String!
+
+  #
+  discordUserName: String!
+
+  #
+  githubUserID: String!
+
+  #
+  githubUserName: String!
+}
+
+#
+type Quasar {
+  #
+  stakeToken: Token!
+
+  #
+  stakeAmount: TokenAmount!
+}
+
+#
+type Query {
+  #
+  addressInfo(address: String!): Address!
+
+  #
+  usernameExist(username: String!): Boolean!
+
+  #
+  campaign(id: ID!): Campaign!
+
+  #
+  campaigns(input: ListCampaignInput!): CampaignConnection!
+
+  #
+  listCampaigns(
+    status: CampaignStatus!
+    listType: ListType!
+    showDynamic: Boolean! = false
+    first: Int
+    after: String
+  ): CampaignConnection! @deprecated(reason: "Use campaigns instead")
+
+  #
+  nftCore(address: String!): NFTCore!
+
+  #
+  spaceStations(input: ListSpaceStationInput!): SpaceStationConnection!
+
+  #
+  credential(id: ID!): Cred!
+
+  #
+  credentials(input: ListCredInput!): CredConnection!
+
+  #
+  cred(id: ID!): Cred! @deprecated(reason: "Use credential instead")
+
+  #
+  creds(
+    userAddress: String = ""
+    type: String = ""
+    listType: ListType!
+    searhString: String = ""
+    first: Int = 100
+    after: String = ""
+  ): [Cred!]! @deprecated(reason: "Use credentials instead")
+
+  #
+  nftTargetPowah(
+    address: String!
+    campaignID: ID!
+    nftCoreAddress: String!
+  ): NFTTargetPowah!
+
+  #
+  nftInfo(id: ID!, nftCoreAddress: String!): NFT!
+
+  #
+  allNFTsByOwnersCoresAndChain(option: NFTsOptions!): [NFTsByOwner!]!
+
+  #
+  participations(id: [ID!]!): [Participation!]!
+
+  #
+  space(id: Int, alias: String): Space!
+
+  #
+  spaces(input: ListSpaceInput!): SpaceConnection!
+
+  #
+  dao(id: Int, alias: String = "", name: String = ""): DAO!
+    @deprecated(reason: "Use space instead")
+
+  #
+  daos: [DAO!]! @deprecated(reason: "Use spaces instead")
+
+  #
+  carousels(offset: Int = 0, limit: Int = 10): [Carousel!]!
+
+  #
+  announcements: [Announcement!]!
+
+  #
+  galaxyNews: [GalaxyNews!]!
+}
+
+#
+input RefreshNFTMetadataInput {
+  #
+  id: Int!
+
+  #
+  nftCoreAddress: String!
+
+  #
+  chain: Chain!
+}
+
+#
+input SendVerificationEmailInput {
+  #
+  address: String!
+
+  #
+  email: String!
+}
+
+#
+enum SocialAccountType {
+  #
+  TWITTER
+
+  #
+  DISCORD
+
+  #
+  GITHUB
+}
+
+#
+type SolanaTxResp {
+  #
+  mint: String!
+
+  #
+  updateAuthority: String!
+
+  #
+  explorerUrl: String!
+
+  #
+  signedTx: String!
+
+  #
+  verifyID: Int!
+}
+
+#
+type Space implements Node {
+  #
+  id: ID!
+
+  #
+  name: String!
+
+  #
+  info: String!
+
+  #
+  thumbnail: String!
+
+  #
+  alias: String!
+
+  #
+  links: String!
+
+  #
+  isVerified: Boolean!
+
+  #
+  admins: [Address!]!
+
+  #
+  isAdmin(address: String!): Boolean!
+
+  #
+  campaigns(input: ListCampaignInput!): CampaignConnection!
+
+  #
+  nftCores(input: ListNFTCoreInput!): NFTCoreConnection!
+
+  #
+  credentials(input: ListCredInput!): CredConnection!
+}
+
+#
+type SpaceConnection {
+  #
+  totalCount: Int!
+
+  #
+  edges: [SpaceEdge!]!
+
+  #
+  pageInfo: PageInfo!
+
+  #
+  list: [Space!]!
+}
+
+#
+type SpaceEdge {
+  #
+  node: Space!
+
+  #
+  cursor: String!
+}
+
+#
+input SpaceInput {
+  #
+  id: Int
+
+  #
+  name: String!
+
+  #
+  info: String!
+
+  #
+  thumbnail: String!
+
+  #
+  alias: String!
+
+  #
+  weight: Int!
+
+  #
+  status: SpaceStatus!
+
+  #
+  links: String!
+
+  #
+  admins: [String!]
+}
+
+#
+type SpaceStation implements Node {
+  #
+  id: ID!
+
+  #
+  address: String!
+
+  #
+  chain: Chain!
+}
+
+#
+type SpaceStationConnection {
+  #
+  totalCount: Int!
+
+  #
+  edges: [SpaceStationEdge!]!
+
+  #
+  pageInfo: PageInfo!
+
+  #
+  list: [SpaceStation!]!
+}
+
+#
+type SpaceStationEdge {
+  #
+  node: SpaceStation!
+
+  #
+  cursor: String!
+}
+
+#
+enum SpaceStatus {
+  #
+  Active
+
+  #
+  Inactive
+}
+
+#
+type SubGraph {
+  #
+  id: ID!
+
+  #
+  campaign: Campaign!
+
+  #
+  endpoint: String!
+
+  #
+  query: String!
+
+  #
+  variable: String!
+
+  #
+  expression: String!
+
+  #
+  addressInfo(address: String!): SubgraphAddress!
+}
+
+#
+type SubgraphAddress {
+  #
+  maxCount: Int!
+}
+
+#
+type Token {
+  #
+  symbol: String!
+
+  #
+  address: String!
+
+  #
+  icon: String!
+}
+
+#
+type TokenAmount {
+  #
+  amount: String!
+
+  #
+  ether: String!
+}
+
+#
+type Trait {
+  #
+  displayType: String!
+
+  #
+  name: String!
+
+  #
+  value: String!
+}
+
+#
+input TraitInput {
+  #
+  name: String!
+
+  #
+  value: String!
+
+  #
+  displayType: String
+}
+
+#
+input UpdateAccessTokenInput {
+  #
+  sig: String!
+
+  #
+  address: String!
+}
+
+#
+input UpdateEmailInput {
+  #
+  sig: String!
+
+  #
+  address: String!
+
+  #
+  email: String!
+
+  #
+  verificationCode: String!
+}
+
+#
+input UpdateEthAddressInput {
+  #
+  sig: String!
+
+  #
+  address: String!
+
+  #
+  ethAddress: String!
+}
+
+#
+input UpdateProfileInput {
+  #
+  sig: String!
+
+  #
+  address: String!
+
+  #
+  username: String!
+
+  #
+  avatar: String!
+}
+
+#
+input UpdateSolanaAddressInput {
+  #
+  sig: String!
+
+  #
+  address: String!
+
+  #
+  solanaAddress: String!
+}
+
+#
+type VerifyDiscordAccountInfo {
+  #
+  address: String!
+
+  #
+  discordUserID: String!
+
+  #
+  discordUserName: String!
+}
+
+#
+input VerifyDiscordAccountInput {
+  #
+  sig: String!
+
+  #
+  address: String!
+
+  #
+  parameter: String!
+}
+
+#
+type VerifyGithubAccountInfo {
+  #
+  address: String!
+
+  #
+  githubUserID: String!
+
+  #
+  githubUserName: String!
+}
+
+#
+input VerifyGithubAccountInput {
+  #
+  sig: String!
+
+  #
+  address: String!
+
+  #
+  parameter: String!
+}
+
+#
+type VerifyTwitterAccountInfo {
+  #
+  address: String!
+
+  #
+  twitterUserID: String!
+
+  #
+  twitterUserName: String!
+}
+
+#
+input VerifyTwitterAccountInput {
+  #
+  sig: String!
+
+  #
+  address: String!
+
+  #
+  tweetURL: String!
+}
+
+#
+type WhitelistAddress {
+  #
+  address: String!
+
+  #
+  maxCount: Int!
+
+  #
+  usedCount: Int!
+}
+
+#
+input getPresignURLInput {
+  #
+  address: String!
+
+  #
+  fileName: String!
+
+  #
+  fileSize: Int!
+}

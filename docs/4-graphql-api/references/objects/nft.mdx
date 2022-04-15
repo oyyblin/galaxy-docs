@@ -1,0 +1,180 @@
+---
+id: nft
+title: NFT
+---
+
+
+No description
+
+```graphql
+type NFT implements Node {
+  id: ID!
+  nftCore: NFTCore!
+  solanaTokenAddress: String!
+  campaign: Campaign!
+  chain: Chain!
+  name: String!
+  image: String!
+  ipfsImage: String
+  category: String!
+  description: String!
+  treasureBack: Boolean!
+  powah: Int!
+  minter: Address!
+  owner: Address!
+  status: NFTStatus!
+  createdAt: String!
+  createBlock: Int!
+  quasarInfo: Quasar
+  superInfo: [Quasar!]!
+  isSuper: Boolean!
+  treasure(
+  sig: String!
+): NFTTreasure
+  animationURL: String!
+  backgroundColor: String!
+  nftTargetPowah: NFTTargetPowah
+  traits: [Trait!]
+}
+```
+
+
+### Fields
+
+#### `id` ([`ID`](../../references/scalars/id))
+
+
+
+
+#### `nftCore` ([`NFTCore`](../../references/objects/nftcore))
+
+
+
+
+#### `solanaTokenAddress` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `campaign` ([`Campaign`](../../references/objects/campaign))
+
+
+
+
+#### `chain` ([`Chain`](../../references/enums/chain))
+
+
+
+
+#### `name` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `image` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `ipfsImage` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `category` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `description` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `treasureBack` ([`Boolean`](../../references/scalars/boolean))
+
+
+
+
+#### `powah` ([`Int`](../../references/scalars/int))
+
+
+
+
+#### `minter` ([`Address`](../../references/objects/address))
+
+
+
+
+#### `owner` ([`Address`](../../references/objects/address))
+
+
+
+
+#### `status` ([`NFTStatus`](../../references/enums/nftstatus))
+
+
+
+
+#### `createdAt` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `createBlock` ([`Int`](../../references/scalars/int))
+
+
+
+
+#### `quasarInfo` ([`Quasar`](../../references/objects/quasar))
+
+
+
+
+#### `superInfo` ([`Quasar`](../../references/objects/quasar))
+
+
+
+
+#### `isSuper` ([`Boolean`](../../references/scalars/boolean))
+
+
+
+
+#### `treasure` ([`NFTTreasure`](../../references/objects/nfttreasure))
+
+
+- ##### `sig` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `animationURL` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `backgroundColor` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `nftTargetPowah` ([`NFTTargetPowah`](../../references/objects/nfttarget-powah))
+
+
+
+
+#### `traits` ([`Trait`](../../references/objects/trait))
+
+
+
+
+### Interfaces
+
+#### [`Node`](../../references/interfaces/node) 
+
+
+
+
+
+

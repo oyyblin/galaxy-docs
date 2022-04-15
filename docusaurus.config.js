@@ -26,7 +26,8 @@ const config = {
           id: "default",
           sidebarPath: require.resolve("./sidebars.js"),
           sidebarCollapsible: false,
-          editUrl: "https://github.com/ProjectGalaxyHQ/galaxy-dev-docs/blob/main",
+          editUrl:
+            "https://github.com/ProjectGalaxyHQ/galaxy-dev-docs/blob/main",
         },
         blog: false,
         theme: {
@@ -56,6 +57,11 @@ const config = {
             position: "left",
           },
           {
+            href: "https://projectgalaxyhq.github.io/galaxy-proposals/",
+            label: "Proposals",
+            position: "left",
+          },
+          {
             href: "https://galaxy.eco",
             label: "Home",
             position: "right",
@@ -75,6 +81,20 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+
+  plugins: [
+    [
+      "@edno/docusaurus2-graphql-doc-generator",
+      {
+        schema: "./graphql/schema.graphql",
+        // docs will be generated under rootPath/baseURL
+        rootPath: "./docs/4-graphql-api",
+        baseURL: "references",
+        // needed because we use 4-graphql-api with alias graphql-api
+        linkRoot: "../..",
+      },
+    ],
+  ],
 };
 
 module.exports = config;
