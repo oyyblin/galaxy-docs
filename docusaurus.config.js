@@ -25,7 +25,7 @@ const config = {
           path: "docs",
           id: "default",
           sidebarPath: require.resolve("./sidebars.js"),
-          sidebarCollapsible: false,
+          sidebarCollapsible: true,
           editUrl:
             "https://github.com/ProjectGalaxyHQ/galaxy-dev-docs/blob/main",
         },
