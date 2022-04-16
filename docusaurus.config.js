@@ -1,6 +1,7 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
@@ -42,16 +43,17 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       colorMode: {
-        defaultMode: "dark",
-        disableSwitch: true,
-        respectPrefersColorScheme: false,
+        defaultMode: "light",
+        disableSwitch: false,
+        respectPrefersColorScheme: true,
       },
       // announcementBar: {
       //   content: "wow",
       // },
       navbar: {
         logo: {
-          src: "img/logo.svg",
+          src: "img/logo-light-vert.png",
+          srcDark: "img/logo-dark-vert.png",
         },
         items: [
           {
@@ -85,7 +87,6 @@ const config = {
         ],
       },
       footer: {
-        style: "dark",
         links: [
           {
             title: "Governance",
@@ -169,6 +170,7 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} Project Galaxy`,
       },
       prism: {
+        theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
       },
       // docusaurus-plugin-image-zoom
