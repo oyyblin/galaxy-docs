@@ -207,7 +207,10 @@ const config = {
         path: "docs-product",
         routeBasePath: "/",
         sidebarPath: require.resolve("./sidebars.js"),
-        // ... other options
+        sidebarCollapsible: true,
+        editUrl: "https://github.com/ProjectGalaxyHQ/galaxy-docs/blob/main",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
       },
     ],
     require.resolve("docusaurus-plugin-image-zoom"),
