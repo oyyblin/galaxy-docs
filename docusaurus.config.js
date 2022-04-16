@@ -7,9 +7,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Project Galaxy Developer Documentation",
-  // TODO: Update url and baseUrl once we move to custom domain
   url: "https://docs.galaxy.eco",
-  baseUrl: "/galaxy-docs/",
+  baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
