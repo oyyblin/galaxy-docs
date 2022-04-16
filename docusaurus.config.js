@@ -6,7 +6,9 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Project Galaxy Developer Documentation",
+  title: "Project Galaxy Documentation",
+  tagline:
+    "Here you'll find guides, resources, and references you can use to onboard and build with Project Galaxy",
   url: "https://docs.galaxy.eco",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -34,6 +36,10 @@ const config = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
+        googleAnalytics: {
+          trackingID: "G-DF3J2WE6KR",
+          anonymizeIP: true,
+        },
       }),
     ],
   ],
@@ -41,6 +47,37 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      // SEO
+      image: "static/img/meta-bg.jpg",
+      metadata: [
+        { name: "title", content: "Project Galaxy Documentation" },
+        {
+          name: "description",
+          content:
+            "Here you'll find guides, resources, and references you can use to onboard and build with Project Galaxy.",
+        },
+        { name: "language", content: "English" },
+        { name: "twitter:card", content: "summary" },
+        { name: "twitter:site", content: "@ProjectGalaxyHQ" },
+        { name: "twitter:creator", content: "@oyyblin" },
+        {
+          property: "og:url",
+          content: "https://docs.galaxy.eco/",
+        },
+        {
+          property: "og:title",
+          content: "Project Galaxy Documentation",
+        },
+        {
+          property: "og:description",
+          content:
+            "Here you'll find guides, resources, and references you can use to onboard and build with Project Galaxy.",
+        },
+        {
+          property: "og:image",
+          content: "static/img/meta-bg.jpg",
+        },
+      ],
       colorMode: {
         defaultMode: "light",
         disableSwitch: false,
