@@ -78,14 +78,94 @@ const config = {
             position: "right",
           },
           {
-            href: "https://github.com/ProjectGalaxyHQ",
-            label: "GitHub",
+            href: "https://help.galaxy.eco/",
+            label: "Help Center",
             position: "right",
           },
         ],
       },
       footer: {
         style: "dark",
+        links: [
+          {
+            title: "Governance",
+            items: [
+              {
+                label: "Forum",
+                href: "https://forum.galaxy.eco/",
+              },
+              {
+                label: "Vote",
+                href: "https://vote.galaxy.eco/",
+              },
+              {
+                label: "Proposals",
+                href: "https://github.com/ProjectGalaxyHQ/galaxy-proposals",
+              },
+            ],
+          },
+          {
+            title: "Developer",
+            items: [
+              {
+                label: "Github",
+                href: "https://github.com/ProjectGalaxyHQ",
+              },
+              {
+                label: "Developer Docs",
+                to: "developer/",
+              },
+            ],
+          },
+          {
+            title: "Community",
+            items: [
+              {
+                label: "Discord",
+                href: "https://discord.gg/projectgalaxy",
+              },
+              {
+                label: "Twitter",
+                href:
+                  "https://twitter.com/intent/follow?screen_name=ProjectGalaxyHQ",
+              },
+              {
+                label: "Telegram",
+                href: "https://t.me/ProjectGalaxyHQ",
+              },
+            ],
+          },
+          {
+            title: "Resources",
+            items: [
+              {
+                label: "Help Center",
+                href: "https://help.galaxy.eco/",
+              },
+              {
+                label: "Blog",
+                href: "https://blog.galaxy.eco/",
+              },
+              {
+                label: "Newsletter",
+                href: "http://newsletter.galaxy.eco/",
+              },
+            ],
+          },
+          {
+            title: "About Us",
+            items: [
+              {
+                label: "Home",
+                href: "https://galaxy.eco/",
+              },
+              {
+                label: "Brand Assets",
+                href: "https://bulletlabs.com/project-galaxy-brand",
+              },
+            ],
+          },
+        ],
         copyright: `Copyright © ${new Date().getFullYear()} Project Galaxy`,
       },
       prism: {
