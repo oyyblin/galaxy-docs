@@ -21,8 +21,8 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: "/", // Serve the docs at the site's root
-          path: "docs",
+          routeBasePath: "developer", // Serve the docs at the site's root
+          path: "docs-developer",
           id: "default",
           sidebarPath: require.resolve("./sidebars.js"),
           sidebarCollapsible: true,
@@ -53,6 +53,13 @@ const config = {
           src: "img/logo.svg",
         },
         items: [
+          {
+            type: "doc",
+            docId: "into-the-galaxy/overview",
+            docsPluginId: "product",
+            label: "Product",
+            position: "left",
+          },
           {
             type: "doc",
             docId: "getting-started/introduction",
@@ -98,6 +105,16 @@ const config = {
         loaders: {
           UrlLoader: "@graphql-tools/url-loader",
         },
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "product",
+        path: "docs-product",
+        routeBasePath: "/",
+        sidebarPath: require.resolve("./sidebars.js"),
+        // ... other options
       },
     ],
   ],
