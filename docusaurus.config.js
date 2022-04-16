@@ -133,8 +133,11 @@ const config = {
       require.resolve("@easyops-cn/docusaurus-search-local"),
       {
         // `hashed` is recommended as long-term-cache of index file is possible.
+        indexDocs: true,
+        indexBlog: false,
         hashed: true,
-        docsRouteBasePath: ["/docs-developer", "/docs-product"],
+        docsRouteBasePath: "/",
+        docsDir: "docs-developer",
       },
     ],
   ],
