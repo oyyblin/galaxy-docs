@@ -129,6 +129,14 @@ const config = {
       },
     ],
     require.resolve("docusaurus-plugin-image-zoom"),
+    [
+      require.resolve("@easyops-cn/docusaurus-search-local"),
+      {
+        // `hashed` is recommended as long-term-cache of index file is possible.
+        hashed: true,
+        docsRouteBasePath: ["/docs-developer", "/docs-product"],
+      },
+    ],
   ],
 };
 
