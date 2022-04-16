@@ -12,4 +12,4 @@ sidebar_position: 3
 
 ## Documentation feedback
 
-Submit documentation feedbacks or updates by creating an issue or PR on our [github repo](https://github.com/ProjectGalaxyHQ/galaxy-dev-docs).
+Submit documentation feedbacks or updates by creating an issue or PR on our [github repo](https://github.com/ProjectGalaxyHQ/galaxy-docs).

@@ -1,4 +1,4 @@
-# galaxy-dev-docs
+# galaxy-docs
 
 ## GraphQL documentation
 

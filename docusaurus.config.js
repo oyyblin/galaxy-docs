@@ -8,12 +8,12 @@ const config = {
   title: "Project Galaxy Developer Documentation",
   // TODO: Update url and baseUrl once we move to custom domain
   url: "https://docs.galaxy.eco",
-  baseUrl: "/galaxy-dev-docs/",
+  baseUrl: "/galaxy-docs/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "ProjectGalaxyHQ",
-  projectName: "galaxy-dev-docs",
+  projectName: "galaxy-docs",
 
   presets: [
     [
@@ -27,7 +27,7 @@ const config = {
           sidebarPath: require.resolve("./sidebars.js"),
           sidebarCollapsible: true,
           editUrl:
-            "https://github.com/ProjectGalaxyHQ/galaxy-dev-docs/blob/main",
+            "https://github.com/ProjectGalaxyHQ/galaxy-docs/blob/main",
         },
         blog: false,
         theme: {
