@@ -26,8 +26,9 @@ const config = {
           id: "default",
           sidebarPath: require.resolve("./sidebars.js"),
           sidebarCollapsible: true,
-          editUrl:
-            "https://github.com/ProjectGalaxyHQ/galaxy-docs/blob/main",
+          editUrl: "https://github.com/ProjectGalaxyHQ/galaxy-docs/blob/main",
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
         },
         blog: false,
         theme: {
@@ -90,6 +91,16 @@ const config = {
       prism: {
         darkTheme: darkCodeTheme,
       },
+      // docusaurus-plugin-image-zoom
+      zoom: {
+        selector: ".markdown :not(em) > img",
+        config: {
+          background: {
+            light: "rgb(255, 255, 255)",
+            dark: "rgb(50, 50, 50)",
+          },
+        },
+      },
     }),
 
   plugins: [
@@ -117,6 +128,7 @@ const config = {
         // ... other options
       },
     ],
+    require.resolve("docusaurus-plugin-image-zoom"),
   ],
 };
 
