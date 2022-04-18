@@ -125,7 +125,7 @@ const config = {
             position: "right",
           },
           {
-            href: "https://help.galaxy.eco/",
+            href: "https://to.galaxy.eco/support",
             label: "Contact Support",
             position: "right",
           },
@@ -181,8 +181,12 @@ const config = {
             title: "Resources",
             items: [
               {
-                label: "Help Center",
-                href: "https://help.galaxy.eco/",
+                label: "Docs",
+                href: "https://docs.galaxy.eco/",
+              },
+              {
+                label: "Guides",
+                href: "https://docs.galaxy.eco/guide",
               },
               {
                 label: "Blog",
@@ -204,6 +208,10 @@ const config = {
               {
                 label: "Brand Assets",
                 href: "https://to.galaxy.eco/brand",
+              },
+              {
+                label: "Contact Support",
+                href: "https://to.galaxy.eco/support",
               },
             ],
           },
