@@ -42,7 +42,7 @@ With Galaxy Credentials, we will be able to build a Web3 DID system that not onl
 
 ## Build with Galaxy
 
-If you want to contribute credentials to the Galaxy data network, or leverage Galaxy Credentials in our product/community, you can apply for access for Closed Beta [here](https://www.notion.so/Project-Galaxy-Dashboard-Application-81d019fccfac435bbfc857cfefd09c90). We are also hiring! If you are interested in becoming part of the history in building Web3 Credential Data Network, check out our job openings [here](https://docs.galaxy.eco/Careers/iR9nhHN6ru3svU2vMZNGy8). We are super excited for the journey ahead.
+If you want to contribute credentials to the Galaxy data network, or leverage Galaxy Credentials in our product/community, you can apply for access for Closed Beta [here](https://to.galaxy.eco/application). We are also hiring! If you are interested in becoming part of the history in building Web3 Credential Data Network, check out our job openings [here](https://to.galaxy.eco/careers). We are super excited for the journey ahead.
 
 ## Join Project Galaxy Community
 
