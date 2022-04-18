@@ -37,3 +37,12 @@
 [data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
+@media (min-width: 997px)
+.menu_izAj {
+    padding: 1em;
+}
+
+.table-of-contents {
+    padding: 0 !important;
+}
