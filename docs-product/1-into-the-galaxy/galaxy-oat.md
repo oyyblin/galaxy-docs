@@ -30,4 +30,4 @@ We foresee that Galaxy OAT will not only be limited to Loyalty Programs for NFT,
 
 **For event organizers, apply for beta access now** - [https://to.galaxy.eco/application](https://to.galaxy.eco/application)
 
-**To learn more about how create an OAT event from Galaxy Dashboard, visit** [https://docs.galaxy.eco/Getting-Started/mVa4yX53RCHfxDEmed68Ww/Step-5-Kickstart-a-Campaign/9uy2JjrZEm5rKWu5GSXgGP#oat-campaign-guide](https://docs.galaxy.eco/Getting-Started/mVa4yX53RCHfxDEmed68Ww/Step-5-Kickstart-a-Campaign/9uy2JjrZEm5rKWu5GSXgGP#oat-campaign-guide)
+**To learn more about how create an OAT event from Galaxy Dashboard, visit** [https://help.galaxy.eco/article/grda0qy4m3-step-5-kickstart-a-campaign](https://help.galaxy.eco/article/grda0qy4m3-step-5-kickstart-a-campaign)
