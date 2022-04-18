@@ -1,0 +1,59 @@
+---
+id: airdrop
+title: Airdrop
+---
+
+
+No description
+
+```graphql
+type Airdrop {
+  name: String!
+  contractAddress: String!
+  airdropType: AirdropType!
+  token: Token!
+  merkleTreeUrl: String!
+  addressInfo(
+  address: String!
+): AirdropAddressInfo
+}
+```
+
+
+### Fields
+
+#### `name` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `contractAddress` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `airdropType` ([`AirdropType`](../../references/enums/airdrop-type))
+
+
+
+
+#### `token` ([`Token`](../../references/objects/token))
+
+
+
+
+#### `merkleTreeUrl` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `addressInfo` ([`AirdropAddressInfo`](../../references/objects/airdrop-address-info))
+
+
+- ##### `address` ([`String`](../../references/scalars/string))
+
+
+
+
+
+

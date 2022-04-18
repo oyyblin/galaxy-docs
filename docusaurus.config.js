@@ -6,7 +6,7 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Project Galaxy Documentation",
+  title: "Project Galaxy Docs",
   tagline:
     "Here you'll find guides, resources, and references you can use to onboard and build with Project Galaxy",
   url: "https://docs.galaxy.eco",
@@ -24,7 +24,7 @@ const config = {
       ({
         docs: {
           routeBasePath: "developer", // Serve the docs at the site's root
-          path: "docs-developer",
+          path: "doc-developer",
           id: "default",
           sidebarPath: require.resolve("./sidebars.js"),
           sidebarCollapsible: true,
@@ -50,7 +50,7 @@ const config = {
       // SEO
       image: "static/img/meta-bg.jpg",
       metadata: [
-        { name: "title", content: "Project Galaxy Documentation" },
+        { name: "title", content: "Project Galaxy Docs" },
         {
           name: "description",
           content:
@@ -66,7 +66,7 @@ const config = {
         },
         {
           property: "og:title",
-          content: "Project Galaxy Documentation",
+          content: "Project Galaxy Docs",
         },
         {
           property: "og:description",
@@ -95,7 +95,7 @@ const config = {
           {
             type: "doc",
             docId: "into-the-galaxy/overview",
-            docsPluginId: "product",
+            docsPluginId: "overview",
             label: "Overview",
             position: "left",
           },
@@ -239,8 +239,8 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "product",
-        path: "docs-product",
+        id: "overview",
+        path: "doc-overview",
         routeBasePath: "/",
         sidebarPath: require.resolve("./sidebars.js"),
         sidebarCollapsible: true,
@@ -258,7 +258,7 @@ const config = {
         indexBlog: false,
         hashed: true,
         docsRouteBasePath: "/",
-        docsDir: "docs-developer",
+        docsDir: "doc-developer",
       },
     ],
   ],
