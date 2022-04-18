@@ -141,6 +141,10 @@ const config = {
                 href: "https://forum.galaxy.eco/",
               },
               {
+                label: "Proposals",
+                href: "governance/",
+              },
+              {
                 label: "Vote",
                 href: "https://vote.galaxy.eco/",
               },
@@ -182,7 +186,7 @@ const config = {
             items: [
               {
                 label: "Docs",
-                href: "https://docs.galaxy.eco/",
+                href: "/",
               },
               {
                 label: "Guides",
