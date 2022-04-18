@@ -96,7 +96,7 @@ const config = {
             type: "doc",
             docId: "into-the-galaxy/overview",
             docsPluginId: "product",
-            label: "Product",
+            label: "Overview",
             position: "left",
           },
           {
@@ -107,12 +107,12 @@ const config = {
           },
           {
             href: "https://projectgalaxyhq.github.io/galaxy-proposals/",
-            label: "Proposals",
+            label: "Governance",
             position: "left",
           },
           {
             href: "https://galaxy.eco",
-            label: "Home",
+            label: "App",
             position: "right",
           },
           {
@@ -193,17 +193,17 @@ const config = {
             title: "About Us",
             items: [
               {
-                label: "Home",
+                label: "App",
                 href: "https://galaxy.eco/",
               },
               {
                 label: "Brand Assets",
-                href: "https://bulletlabs.com/project-galaxy-brand",
+                href: "https://to.galaxy.eco/brand",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Project Galaxy`,
+        copyright: `© ${new Date().getFullYear()} Project Galaxy`,
       },
       prism: {
         theme: lightCodeTheme,
