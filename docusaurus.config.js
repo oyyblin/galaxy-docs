@@ -23,8 +23,8 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: "developer", // Serve the docs at the site's root
-          path: "doc-developer",
+          routeBasePath: "/", // Serve the docs at the site's root
+          path: "doc-overview",
           id: "default",
           sidebarPath: require.resolve("./sidebars.js"),
           sidebarCollapsible: true,
@@ -95,14 +95,21 @@ const config = {
           {
             type: "doc",
             docId: "into-the-galaxy/overview",
-            docsPluginId: "overview",
             label: "Overview",
             position: "left",
           },
           {
             type: "doc",
             docId: "getting-started/introduction",
+            docsPluginId: "developer",
             label: "Developer",
+            position: "left",
+          },
+          {
+            type: "doc",
+            docId: "dashboard-tutorial/introduction",
+            docsPluginId: "guides",
+            label: "Guides",
             position: "left",
           },
           {
@@ -227,7 +234,7 @@ const config = {
       {
         schema: "https://graphigo.prd.galaxy.eco/query",
         // docs will be generated under rootPath/baseURL
-        rootPath: "./docs/4-graphql-api",
+        rootPath: "./doc-developer/4-graphql-api",
         baseURL: "references",
         // needed because we use 4-graphql-api with alias graphql-api
         linkRoot: "../..",
@@ -239,9 +246,22 @@ const config = {
     [
       "@docusaurus/plugin-content-docs",
       {
-        id: "overview",
-        path: "doc-overview",
-        routeBasePath: "/",
+        id: "developer",
+        path: "doc-developer",
+        routeBasePath: "developer",
+        sidebarPath: require.resolve("./sidebars.js"),
+        sidebarCollapsible: true,
+        editUrl: "https://github.com/ProjectGalaxyHQ/galaxy-docs/blob/main",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "guides",
+        path: "doc-guides",
+        routeBasePath: "guide",
         sidebarPath: require.resolve("./sidebars.js"),
         sidebarCollapsible: true,
         editUrl: "https://github.com/ProjectGalaxyHQ/galaxy-docs/blob/main",
