@@ -113,7 +113,9 @@ const config = {
             position: "left",
           },
           {
-            href: "https://projectgalaxyhq.github.io/galaxy-proposals/",
+            type: "doc",
+            docId: "introduction",
+            docsPluginId: "governance",
             label: "Governance",
             position: "left",
           },
@@ -124,7 +126,7 @@ const config = {
           },
           {
             href: "https://help.galaxy.eco/",
-            label: "Help Center",
+            label: "Contact Support",
             position: "right",
           },
         ],
@@ -141,10 +143,6 @@ const config = {
               {
                 label: "Vote",
                 href: "https://vote.galaxy.eco/",
-              },
-              {
-                label: "Proposals",
-                href: "https://github.com/ProjectGalaxyHQ/galaxy-proposals",
               },
             ],
           },
@@ -262,6 +260,19 @@ const config = {
         id: "guides",
         path: "doc-guides",
         routeBasePath: "guide",
+        sidebarPath: require.resolve("./sidebars.js"),
+        sidebarCollapsible: true,
+        editUrl: "https://github.com/ProjectGalaxyHQ/galaxy-docs/blob/main",
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      },
+    ],
+    [
+      "@docusaurus/plugin-content-docs",
+      {
+        id: "governance",
+        path: "doc-governance",
+        routeBasePath: "governance",
         sidebarPath: require.resolve("./sidebars.js"),
         sidebarCollapsible: true,
         editUrl: "https://github.com/ProjectGalaxyHQ/galaxy-docs/blob/main",
