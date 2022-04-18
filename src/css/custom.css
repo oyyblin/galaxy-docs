@@ -52,7 +52,7 @@ nav.menu.thin-scrollbar.menu_izAj {
 }
 
 .footer__copyright {
-    padding-top: 2em !important;
+    padding-top: 4em !important;
     font-weight: bold;
 }
 
@@ -66,4 +66,8 @@ nav.menu.thin-scrollbar.menu_izAj {
 
 aside.theme-doc-sidebar-container.docSidebarContainer_rKC_ {
     margin-right: 1rem;
+}
+
+.breadcrumbs__link {
+    border-radius: unset !important;
 }
