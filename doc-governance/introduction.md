@@ -1,16 +1,14 @@
 ---
 sidebar_position: 1
-sidebar_label: 'Introduction'
+sidebar_label: "Introduction"
 slug: /
 ---
 
 # Governance Process
 
-> The following content is copied directly from [our forum](https://forum.galaxy.eco/t/project-galaxy-dao-governance-process/15)
+_Project Galaxy DAO and GAL is NOT live. The following governance process will start to take effect right after the GAL token generation event._
 
-*Project Galaxy DAO and GAL is NOT live. The following governance process will start to take effect right after the GAL token generation event.* 
-
-Project Galaxy DAO is controlled by GAL holders. GAL holders have the ability to control the amount of the Platform Fee collected by the protocol, and control funds held by the Project Galaxy Community Treasury. All proposals need to go through a three-step process described below. In order for a proposal to pass, it must have over 50% passing votes with endorsement from wallet addresses holding at least 2,000,000 GAL, with delegation allowed. When a proposal is passed, the changes will be implemented by Project Galaxy’s operation team and signed by the multi-sig, if necessary. 
+Project Galaxy DAO is controlled by GAL holders. GAL holders have the ability to control the amount of the Platform Fee collected by the protocol, and control funds held by the Project Galaxy Community Treasury. All proposals need to go through a three-step process described below. In order for a proposal to pass, it must have over 50% passing votes with endorsement from wallet addresses holding at least 2,000,000 GAL, with delegation allowed. When a proposal is passed, the changes will be implemented by Project Galaxy’s operation team and signed by the multi-sig, if necessary.
 
 ## Proposal
 
@@ -24,11 +22,11 @@ The purpose of the Temperature Check is to determine if there is sufficient will
 
 The purpose of the Draft Proposal is to establish formal discussion around a potential proposal. To create a Draft Proposal
 
-1. [Fork](https://github.com/ProjectGalaxyHQ/galaxy-proposals) the Galaxy-Proposal repository on Github
-2. Add your GP to your fork of the repository
+1. [Fork](https://github.com/ProjectGalaxyHQ/galaxy-docs) the Galaxy Docs repository on Github
+2. Add your GP to your fork of the repository, under folder `doc-governance/proposals/`
 3. Submit a Pull Request
 
-Your PR will be reviewed by a contributor to check its readiness taking into account of the feedback from the Temperature Check. If the GP is not ready, the contributor will send it back to the author for revision. If the GP is ready, the proposal will be assigned with a GP number to be voted by GAL holders. 
+Your PR will be reviewed by a contributor to check its readiness taking into account of the feedback from the Temperature Check. If the GP is not ready, the contributor will send it back to the author for revision. If the GP is ready, the proposal will be assigned with a GP number to be voted by GAL holders.
 
 ### Phase 3: Vote Proposal — Snapshot
 
@@ -41,7 +39,7 @@ Delegation is allowed through [this](https://snapshot.org/#/delegate/project-gal
 
 ## Implementation
 
-When a proposal is passed, the changes will be implemented by Project Galaxy’s operation team and signed by the multi-sig, if necessary. 
+When a proposal is passed, the changes will be implemented by Project Galaxy’s operation team and signed by the multi-sig, if necessary.
 
 ## Multi-signature Signers
 
