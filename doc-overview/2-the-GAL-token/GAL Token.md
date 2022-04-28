@@ -18,5 +18,4 @@ Project Galaxy aims to build a permissionless, open, and collaborative credentia
 GAL has a total supply of 200,000,000 tokens.
 Here is a breakdown on how these tokens will be distributed.
 
-![https://miro.medium.com/max/1400/1*B68M_Hmu8Dsye7gC-Q5qLQ.png](https://miro.medium.com/max/1400/1*B68M_Hmu8Dsye7gC-Q5qLQ.png)
-
+![allocation](assets/gal-token-allocation.png)
