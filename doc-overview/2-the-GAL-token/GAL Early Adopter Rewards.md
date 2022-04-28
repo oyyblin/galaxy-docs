@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'GAL Early Adopter Rewards'
+sidebar_label: "GAL Early Adopter Rewards"
 sidebar_position: 2
 ---
 
@@ -15,7 +15,7 @@ The reward distribution system works in accordance with the NFTs a Galaxy commun
 
 Here is the reward breakdown:
 
-![https://miro.medium.com/max/1400/1*E0Rzkur8yxrJnTbBpORamg.png](https://miro.medium.com/max/1400/1*E0Rzkur8yxrJnTbBpORamg.png)
+![allocation](assets/gal-token-allocation.png)
 
 **Reward Boost for Early Meta Cowboy NFT Holders**
 
@@ -25,7 +25,7 @@ Additionally, if you were a [holder](https://github.com/NFTGalaxy/galaxy-nft-h
 
 Users in the tables above will be eligible to claim the airdrop (~3.65 million GAL — 1.83% of total supply) around TGE. The distribution rules for the remaining GAL from the Early Adopters Reward allocation (~350k GAL) will reward to long term contributors in the Galaxy ecosystem, details for distribution will be announced at a later time.
 
-*Due to legal restrictions, users from the U.S., Canada, China, Iran, Korea(North), Syrian Arab Republic, Cuba will NOT be able to claim the airdrop.*
+_Due to legal restrictions, users from the U.S., Canada, China, Iran, Korea(North), Syrian Arab Republic, Cuba will NOT be able to claim the airdrop._
 
 **So what will I get in total?**
 
@@ -35,13 +35,13 @@ For example:
 
   **Shadowy Coder + (Galaxy Girl Reindeer NFT x Meta Cowboy lv2 Boost) + Meta Cowboy lv1 + Meta Cowboy lv2 + Meta Cowboy lv3**
 
-  100 + (250 * 1.3) + 30 + 60 = 535
+  100 + (250 \* 1.3) + 30 + 60 = 535
 
 - Tom joined the community in mid-January. By Feb 10th, Tom has the Meta Cowboy lv1. By the time of the snapshot before TGE, tom managed to mint Meta Cowboy lv2, lv3 & lv4, and bought Galaxy Girl Reindeer NFT through Opensea. # of GAL for Tom will be:
 
   **(Galaxy Girl Reindeer NFT x Meta Cowboy lv1 Boost) + Meta Cowboy lv1 + Meta Cowboy lv2 + Meta Cowboy lv3 + Meta Cowboy lv4**
 
-  250 * 1.2 + 20 + 30 + 60 + 180 = 590
+  250 \* 1.2 + 20 + 30 + 60 + 180 = 590
 
 - Lucy heard about Galaxy from the Solana campaign. She acquired Dr. Sol, and Meta Cowboy lv1, lv2 before the snapshot. # of GAL for Lucy will be:
 
