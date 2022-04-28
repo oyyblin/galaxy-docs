@@ -31,21 +31,23 @@ Users in the tables above will be eligible to claim the airdrop (~3.65 million G
 
 For example:
 
-Alice has been on Project Galaxy since August 2021. By Feb 10th, Alice had the Shadowy Coder NFT, the Galaxy Girl NFT, and the Meta Cowboy lv1 and lv2. By the time of snapshot before TGE, Alice managed to mint the Meta Cowboy lv3 and kept all of the NFTs she acquired before. # of GAL token for Alice will be:
+- Alice has been on Project Galaxy since August 2021. By Feb 10th, Alice had the Shadowy Coder NFT, the Galaxy Girl NFT, and the Meta Cowboy lv1 and lv2. By the time of snapshot before TGE, Alice managed to mint the Meta Cowboy lv3 and kept all of the NFTs she acquired before. # of GAL token for Alice will be:
 
-*Shadowy Coder + (Galaxy Girl Reindeer NFT x Meta Cowboy lv2 Boost) + Meta Cowboy lv1 + Meta Cowboy lv2 + Meta Cowboy lv3*
+  **Shadowy Coder + (Galaxy Girl Reindeer NFT x Meta Cowboy lv2 Boost) + Meta Cowboy lv1 + Meta Cowboy lv2 + Meta Cowboy lv3**
 
-# 100 + (250*1.3)++30+60=535
+  100 + (250 * 1.3) + 30 + 60 = 535
 
-Tom joined the community in mid-January. By Feb 10th, Tom has the Meta Cowboy lv1. By the time of the snapshot before TGE, tom managed to mint Meta Cowboy lv2, lv3 & lv4, and bought Galaxy Girl Reindeer NFT through Opensea. # of GAL for Tom will be:
+- Tom joined the community in mid-January. By Feb 10th, Tom has the Meta Cowboy lv1. By the time of the snapshot before TGE, tom managed to mint Meta Cowboy lv2, lv3 & lv4, and bought Galaxy Girl Reindeer NFT through Opensea. # of GAL for Tom will be:
 
-*(Galaxy Girl Reindeer NFT x Meta Cowboy lv1 Boost) + Meta Cowboy lv1 + Meta Cowboy lv2 + Meta Cowboy lv3 + Meta Cowboy lv4*
+  **(Galaxy Girl Reindeer NFT x Meta Cowboy lv1 Boost) + Meta Cowboy lv1 + Meta Cowboy lv2 + Meta Cowboy lv3 + Meta Cowboy lv4**
 
-# 250*1.2+20+30+60+180=590
+  250 * 1.2 + 20 + 30 + 60 + 180 = 590
 
-Lucy heard about Galaxy from the Solana campaign. She acquired Dr. Sol, and Meta Cowboy lv1, lv2 before the snapshot. # of GAL for Lucy will be:
+- Lucy heard about Galaxy from the Solana campaign. She acquired Dr. Sol, and Meta Cowboy lv1, lv2 before the snapshot. # of GAL for Lucy will be:
 
-# `Dr. Sol + Meta Cowboy lv1 + Meta Cowboy lv2`30+20+30 =80
+  **Dr. Sol + Meta Cowboy lv1 + Meta Cowboy lv2**
+
+  30 + 20 + 30 = 80
 
 # **Have a question? We might have an answer!**
 
