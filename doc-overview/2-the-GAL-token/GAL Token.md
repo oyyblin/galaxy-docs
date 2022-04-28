@@ -19,4 +19,3 @@ GAL has a total supply of 200,000,000 tokens.Here is a breakdown on how these to
 
 ![https://miro.medium.com/max/1400/1*B68M_Hmu8Dsye7gC-Q5qLQ.png](https://miro.medium.com/max/1400/1*B68M_Hmu8Dsye7gC-Q5qLQ.png)
 
-![https://miro.medium.com/max/1400/1*KpbAQf26yHjNgbwrgQfMBg.png](https://miro.medium.com/max/1400/1*KpbAQf26yHjNgbwrgQfMBg.png)
