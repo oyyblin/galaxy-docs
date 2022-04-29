@@ -8,13 +8,16 @@ No description
 
 ```graphql
 type Cred {
-  id: String!
+  id: ID!
   name: String!
   description: String!
   chain: Chain!
   type: String!
   curatorAddress: String!
   referenceLink: String!
+  eligible(
+  address: String!
+): Int!
   staticEligible(
   value: String!
 ): Int!
@@ -27,6 +30,7 @@ type Cred {
 ): CredItemConnection!
   lastUpdate: Int!
   syncRate: Float!
+  lastSyncedBlock: Int!
   credType: CredType!
   credSource: CredSource!
 }
@@ -35,7 +39,7 @@ type Cred {
 
 ### Fields
 
-#### `id` ([`String`](../../references/scalars/string))
+#### `id` ([`ID`](../../references/scalars/id))
 
 
 
@@ -66,6 +70,14 @@ type Cred {
 
 
 #### `referenceLink` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `eligible` ([`Int`](../../references/scalars/int))
+
+
+- ##### `address` ([`String`](../../references/scalars/string))
 
 
 
@@ -112,6 +124,11 @@ type Cred {
 
 
 #### `syncRate` ([`Float`](../../references/scalars/float))
+
+
+
+
+#### `lastSyncedBlock` ([`Int`](../../references/scalars/int))
 
 
 

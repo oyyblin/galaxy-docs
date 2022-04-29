@@ -13,6 +13,8 @@ type Address {
   username: String!
   hasEmail: Boolean!
   hasTwitter: Boolean!
+  hasGithub: Boolean!
+  hasDiscord: Boolean!
   email: String!
   avatar: String!
   solanaAddress: String!
@@ -33,7 +35,11 @@ type Address {
   spaces(
   input: ListSpaceInput
 ): SpaceConnection!
+  credentials(
+  input: ListCredInput
+): CredConnection!
   isVerified: Boolean!
+  isWhitelisted: Boolean!
   nfts(
   option: ListNFTInput!
 ): NFTConnection!
@@ -70,6 +76,16 @@ type Address {
 
 
 #### `hasTwitter` ([`Boolean`](../../references/scalars/boolean))
+
+
+
+
+#### `hasGithub` ([`Boolean`](../../references/scalars/boolean))
+
+
+
+
+#### `hasDiscord` ([`Boolean`](../../references/scalars/boolean))
 
 
 
@@ -146,7 +162,20 @@ type Address {
 
 
 
+#### `credentials` ([`CredConnection`](../../references/objects/cred-connection))
+
+
+- ##### `input` ([`ListCredInput`](../../references/inputs/list-cred-input))
+
+
+
+
 #### `isVerified` ([`Boolean`](../../references/scalars/boolean))
+
+
+
+
+#### `isWhitelisted` ([`Boolean`](../../references/scalars/boolean))
 
 
 
