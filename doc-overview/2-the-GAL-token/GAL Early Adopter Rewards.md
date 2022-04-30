@@ -41,9 +41,9 @@ The remaining GAL from the Early Adopters Reward allocation will reward to long 
 
 - Visit galaxy.eco, connect your wallet 
 - Click on the "Claim" button on the top right corner 
-- ![airdrop1](assets/airdrop1.png)
+![airdrop1](assets/airdrop1.png)
 - You can see how many $GAL tokens available for you to claim. Claiming starts from May 5th, 2022 5am PST 
-- ![airdrop2](assets/airdrop2.png)
+![airdrop2](assets/airdrop2.png)
 
 
 **So what will I get in total?**
