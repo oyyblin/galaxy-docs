@@ -9,7 +9,7 @@ sidebar_position: 2
 
 Since our launch in May 2021, the community has been crucial to the growth of Project Galaxy’s ecosystem. From curating credentials, collecting credentials, participating in campaigns, compiling tutorials, building third-party tools, helping out in Discord, the list goes on. We are grateful for our partners and the amazing campaigns they bring to life on our platform, however, we know that without our strong and dedicated community all of our success couldn’t be possible. Words can’t describe how much we appreciate and respect our community, so we wanted to thank you the best way we knew how: GAL Token Airdrop to reward our early adopters. Read more below to learn about the reward distribution details, the official airdrop date will be announced at a later time.
 
-*Galaxy NFT Holder Reward Distribution Details*
+## Galaxy NFT Holder Reward Distribution Details ##
 
 The reward distribution system works in accordance with the NFTs a Galaxy community member holds. Holders of the Project Galaxy NFTs listed below are eligible for the GAL Early Adopters Reward. **If you hold multiple NFTs from the same category in one account, the NFT will only count once. The snapshot has been taken on April 28th 1am PST, [check the snapshot details here](https://github.com/ProjectGalaxyHQ/galaxy-airdrop). Airdrop claiming starts from May 5th, 2022 at 5pm PST.**
 
@@ -25,7 +25,7 @@ Additionally, if you were a [holder](https://github.com/NFTGalaxy/galaxy-nft-h
 
 Users in the tables above will be eligible to claim the airdrop (~3.65 million GAL — 1.83% of total supply) around TGE. 
 
-*GAL Airdrop for Ecosystem Contributors*
+## GAL Airdrop for Ecosystem Contributors ##
 
 The remaining GAL from the Early Adopters Reward allocation will reward to long term contributors in the Galaxy ecosystem:
 
@@ -37,7 +37,7 @@ The remaining GAL from the Early Adopters Reward allocation will reward to long 
 *Due to legal restrictions, users from the U.S., Canada, China, Iran, Korea(North), Syrian Arab Republic, Cuba will NOT be able to claim the airdrop.*
 
 
-*How to Claim*
+## How to Claim ##
 
 - Visit galaxy.eco, connect your wallet 
 - Click on the "Claim" button on the top right corner 
