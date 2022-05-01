@@ -11,7 +11,7 @@ Since our launch in May 2021, the community has been crucial to the growth of Pr
 
 ## Galaxy NFT Holder Reward Distribution Details ##
 
-The reward distribution system works in accordance with the NFTs a Galaxy community member holds. Holders of the Project Galaxy NFTs listed below are eligible for the GAL Early Adopters Reward. **If you hold multiple NFTs from the same category in one account, the NFT will only count once. The snapshot has been taken on April 28th 1am PST, [check the snapshot details here](https://github.com/ProjectGalaxyHQ/galaxy-airdrop). Airdrop claiming starts from May 5th, 2022 at 5pm PST.**
+The reward distribution system works in accordance with the NFTs a Galaxy community member holds. Holders of the Project Galaxy NFTs listed below are eligible for the GAL Early Adopters Reward. **If you hold multiple NFTs from the same category in one account, the NFT will only count once. The snapshot has been taken on April 28th 1am PST, [check the snapshot details here](https://github.com/ProjectGalaxyHQ/galaxy-airdrop). Airdrop claiming starts from May 5th, 2022 at 5am PST.**
 
 Here is the reward breakdown:
 
@@ -80,7 +80,7 @@ Project Galaxy is focused on solidifying ourselves long-term in the space, we ar
 
 **When will the snapshot for NFT holders take place?**
 
-The snapshot has been taken on April 28th 1am PST. [Check the snapshot details here](https://github.com/ProjectGalaxyHQ/galaxy-airdrop). The TGE time is set to be May 5th, 2022 at 5pm PST.
+The snapshot has been taken on April 28th 1am PST. [Check the snapshot details here](https://github.com/ProjectGalaxyHQ/galaxy-airdrop). The TGE time is set to be May 5th, 2022 at 5am PST.
 
 **Will GAL airdrop be subject to any lockups?**
 
