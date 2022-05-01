@@ -80,7 +80,7 @@ Project Galaxy is focused on solidifying ourselves long-term in the space, we ar
 
 **When will the snapshot for NFT holders take place?**
 
-Snapshot time will happen 1 week before the token generation event. The TGE time is set to be May 5th, 2022 at 5pm PST.
+The snapshot has been taken on April 28th 1am PST. [Check the snapshot details here](https://github.com/ProjectGalaxyHQ/galaxy-airdrop). The TGE time is set to be May 5th, 2022 at 5pm PST.
 
 **Will GAL airdrop be subject to any lockups?**
 
