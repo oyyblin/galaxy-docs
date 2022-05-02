@@ -7,6 +7,7 @@ sidebar_position: 1
 # GAL Token
 
 > ERC20 Token Address: **0x5fAa989Af96Af85384b8a938c2EdE4A7378D9875**
+
 > BEP20 Token Address: **0xe4Cc45Bb5DBDA06dB6183E8bf016569f40497Aa5**
 
 Project Galaxy aims to build a permissionless, open, and collaborative credential data network. The GAL token is an essential component to such infrastructures as it functions as the governance token, incentivizes user participation, and serves as the primary payment token of the Project Galaxy ecosystem. Here are the utilities of GAL:
