@@ -13,7 +13,7 @@ We currently support 2 ways to update your credential items: GraphQL and REST AP
 
 ## GraphQL
 
-For more information on our GraphQL endpoint, please refer to [this doc](../4-graphql-api/overview.md).
+For more information on our GraphQL endpoint, please refer to [this doc](../5-graphql-api/overview.md).
 
 ### Input
 
