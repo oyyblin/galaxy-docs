@@ -5,14 +5,10 @@ sidebar_position: 3
 
 # Galaxy Pathfinder
 
-## What it means to be a Pathfinder
+Pathfinders are community members that help other members by supporting them, answering their questions and guiding them through Project Galaxy’s campaigns, discord and overall ecosystem. Project Galaxy needs pathfinders with passion and energy who support other members with issues and teach them about Project Galaxy. They help us build a more complete and friendly galaxy ecosystem.
 
-Pathfinders are similar to Galaxy brains but a bit more simplified, there are a lot more pathfinders than Galaxy brains. The reasoning for this is the conditions are not the same, Galaxy brains are vetted by galaxy team and have more conditions for keeping the role.
+Just like the Galaxy brain role, the Project Galaxy team reserves the right to revoke a Pathfinder role due to poor behavior or inactivity in the Discord. Project Galaxy does not demand nor require Pathfinders to spend a specific amount of time in the Discord server, the role is assigned to community members who represent best the Galaxy Spirit and our values: community, collaboration and support. Project Galaxy does not intend to integrate a task-based structure to keep or receive the role, but rather nominate new Pathfinders or remove existing ones in accordance with their activity ethics and overall support of the ecosystem. The amount of time spent in the server as a member has little influence on the selection of Pathfinders. 
 
-Pathfinders are users that help their fellow members along the path of the galaxy ecosystem. Pathfinders are also those that perform outreach in the galaxy community finding new paths for us all to work with and discover. We need pathfinders with passion and energy to help us build a more complete and friendly galaxy ecosystem.
+Project Galaxy vouches to do its best to recognize and identify deserving members for this role. We will also listen to the voices of other members to help make these decisions, as not everyone can be a Pathfinder.
 
-Same as our Galaxy brains its possible to lose the role due to activity or poor behavior or by having gone completely inactive. Users can lose the role but will be contacted once before or after losing the role, or In extreme circumstances (complete inactivity) (bad behavior) they can lose the role immediately without warning at the discretion of the team. We do not demand or require anyone to spend a specific amount or incorporate task based structure to keep or receive the role, its more about spirit ethic and recognition from those around you and not just how long you have spent in the server.
 
-Not everyone can participate in these programs and we will do our best to recognize those that deserve it, we also will listen to the voice of other members to accurately give the role to the right person but please remember these programs are not about how long you spend in the server, someone can join later than you and still and receive the role.
-
-**As stated above users can participate at their own will in the galaxy community, community team will check on pathfinders to make sure everyone is being the best they can be.**
