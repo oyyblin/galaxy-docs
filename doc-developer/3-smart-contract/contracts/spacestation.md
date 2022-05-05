@@ -11,11 +11,15 @@ tags:
 
 ## Contract Address:
 
-| Chain     | Address                                    |
-| --------- | ------------------------------------------ |
-| Ethereum  | 0xaae9f9d4fb8748feba405cE25856DC57C91BbB92 |
-| Polygon   | 0x6cad6e1abc83068ea98924aef37e996ed02abf1c |
-| BNB Chain | 0x760B8237e457e6A2b5b196ae073EF0301b8316a2 |
+| Chain     | Address                                    | Correct Signer? |
+| --------- | ------------------------------------------ | --------------- |
+| Polygon   | 0xf6D1B85af155229AcD7B523601148585A1ff67C6 | True            |
+| BSC       | 0x2D18f2d27D50C9b4013DEBA3D54f60996bD8847E | True            |
+| Ethereum  | 0x75cdA57917E9F73705dc8BCF8A6B2f99AdBdc5a5 | True            |
+| Avalanche | 0x13D8c4e3741e968Cc8E740bdB02537cB1d2d70e6 | True            |
+| Arbitrum  | 0x9e6eF7F75ad88D4Edb4C9925C94B769C5b0d6281 | True            |
+| Fantom    | 0x168a6136fD4F60699B64fb9F8a2F8ed95B279954 | True            |
+|           |                                            |                 |
 
 Sample transaction:
 
