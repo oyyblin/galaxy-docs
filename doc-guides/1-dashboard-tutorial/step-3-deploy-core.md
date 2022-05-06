@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Step 3 - Delpoy NFT Contract'
+sidebar_label: 'Step 3 - Deploy NFT Contract'
 sidebar_position: 5
 ---
 
