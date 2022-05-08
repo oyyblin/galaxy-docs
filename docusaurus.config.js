@@ -84,7 +84,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       announcementBar: {
-        content: "🌟 GAL Token will be live on May 5th, 2022. ERC20 Token Address: 0x5fAa989Af96Af85384b8a938c2EdE4A7378D9875 🌟",
+        content: "🌟 ERC20 Token Address: 0x5fAa989Af96Af85384b8a938c2EdE4A7378D9875 🌟",
       },
       navbar: {
         logo: {
