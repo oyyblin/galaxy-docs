@@ -1,0 +1,23 @@
+project_id: 514972
+api_token_env: CROWDIN_DOCUSAURUS_API_KEY
+preserve_hierarchy: true
+languages_mapping: &languages_mapping
+  two_letters_code:
+    # We will use two letters code generally but for Chinese, we will need
+    # to enforce special types to differentiate simplified and traditional
+    # Chinese. Same idea will apply to other languages like Portuguese.
+    zh-CN: zh-CN
+
+files:
+  # JSON translation files
+  - source: /i18n/en/**/*
+    translation: /website/i18n/%two_letters_code%/**/%original_file_name%
+    languages_mapping: *languages_mapping
+
+  - source: /doc-overview/**/*
+    translation: /website/i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/**/%original_file_name%
+    languages_mapping: *languages_mapping
+
+  - source: /doc-guides/**/*
+    translation: /website/i18n/%two_letters_code%/docusaurus-plugin-content-docs-guides/current/**/%original_file_name%
+    languages_mapping: *languages_mapping

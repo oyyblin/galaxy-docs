@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+const DefaultLocale = "en";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -17,6 +18,11 @@ const config = {
   organizationName: "ProjectGalaxyHQ",
   projectName: "galaxy-docs",
 
+  i18n: {
+    defaultLocale: DefaultLocale,
+    locales: ["en", "zh-CN"],
+  },
+
   presets: [
     [
       "classic",
@@ -28,7 +34,14 @@ const config = {
           id: "default",
           sidebarPath: require.resolve("./sidebars.js"),
           sidebarCollapsible: true,
-          editUrl: "https://github.com/ProjectGalaxyHQ/galaxy-docs/blob/main",
+          editUrl: ({ locale, versionDocsDirPath, docPath }) => {
+            // Link to Crowdin for non-English docs
+            if (locale !== DefaultLocale) {
+              return `https://crowdin.com/project/docs_galaxy_eco/${locale}`;
+            }
+            // Link to GitHub for English docs
+            return "https://github.com/ProjectGalaxyHQ/galaxy-docs/blob/main";
+          },
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,
         },
@@ -84,7 +97,8 @@ const config = {
         respectPrefersColorScheme: true,
       },
       announcementBar: {
-        content: "🌟 ERC20 Token Address: 0x5fAa989Af96Af85384b8a938c2EdE4A7378D9875 🌟",
+        content:
+          "🌟 ERC20 Token Address: 0x5fAa989Af96Af85384b8a938c2EdE4A7378D9875 🌟",
       },
       navbar: {
         logo: {
@@ -129,6 +143,10 @@ const config = {
             label: "Contact Support",
             position: "right",
           },
+          // {
+          //   type: "localeDropdown",
+          //   position: "right",
+          // },
         ],
       },
       footer: {
@@ -261,7 +279,14 @@ const config = {
         routeBasePath: "developer",
         sidebarPath: require.resolve("./sidebars.js"),
         sidebarCollapsible: true,
-        editUrl: "https://github.com/ProjectGalaxyHQ/galaxy-docs/blob/main",
+        editUrl: ({ locale, versionDocsDirPath, docPath }) => {
+          // Link to Crowdin for non-English docs
+          if (locale !== DefaultLocale) {
+            return `https://crowdin.com/project/docs_galaxy_eco/${locale}`;
+          }
+          // Link to GitHub for English docs
+          return "https://github.com/ProjectGalaxyHQ/galaxy-docs/blob/main";
+        },
         showLastUpdateAuthor: false,
         showLastUpdateTime: true,
       },
@@ -274,7 +299,14 @@ const config = {
         routeBasePath: "guide",
         sidebarPath: require.resolve("./sidebars.js"),
         sidebarCollapsible: true,
-        editUrl: "https://github.com/ProjectGalaxyHQ/galaxy-docs/blob/main",
+        editUrl: ({ locale, versionDocsDirPath, docPath }) => {
+          // Link to Crowdin for non-English docs
+          if (locale !== DefaultLocale) {
+            return `https://crowdin.com/project/docs_galaxy_eco/${locale}`;
+          }
+          // Link to GitHub for English docs
+          return "https://github.com/ProjectGalaxyHQ/galaxy-docs/blob/main";
+        },
         showLastUpdateAuthor: false,
         showLastUpdateTime: true,
       },
@@ -287,7 +319,14 @@ const config = {
         routeBasePath: "governance",
         sidebarPath: require.resolve("./sidebars.js"),
         sidebarCollapsible: true,
-        editUrl: "https://github.com/ProjectGalaxyHQ/galaxy-docs/blob/main",
+        editUrl: ({ locale, versionDocsDirPath, docPath }) => {
+          // Link to Crowdin for non-English docs
+          if (locale !== DefaultLocale) {
+            return `https://crowdin.com/project/docs_galaxy_eco/${locale}`;
+          }
+          // Link to GitHub for English docs
+          return "https://github.com/ProjectGalaxyHQ/galaxy-docs/blob/main";
+        },
         showLastUpdateAuthor: false,
         showLastUpdateTime: true,
       },
