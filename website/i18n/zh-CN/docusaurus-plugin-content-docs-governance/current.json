@@ -1,0 +1,10 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Proposals": {
+    "message": "Proposals",
+    "description": "The label for category Proposals in sidebar docs"
+  }
+}

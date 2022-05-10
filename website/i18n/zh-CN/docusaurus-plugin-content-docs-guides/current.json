@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Dashboard Tutorial": {
+    "message": "Dashboard Tutorial",
+    "description": "The label for category Dashboard Tutorial in sidebar docs"
+  },
+  "sidebar.docs.category.User Tutorial": {
+    "message": "User Tutorial",
+    "description": "The label for category User Tutorial in sidebar docs"
+  },
+  "sidebar.docs.category.Setting up Galaxy ID": {
+    "message": "Setting up Galaxy ID",
+    "description": "The label for category Setting up Galaxy ID in sidebar docs"
+  },
+  "sidebar.docs.category.Voting": {
+    "message": "Voting",
+    "description": "The label for category Voting in sidebar docs"
+  }
+}
