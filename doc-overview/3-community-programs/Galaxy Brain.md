@@ -13,7 +13,7 @@ The Galaxy Brain role is not something a user can apply for or ask for, it is a 
 
 Galaxy Brains work closely with the core team in various efforts to make sure that information and support can be spread through the right channels to all of Project Galaxy's users. 
 
-The Galaxy Brain role is an earned role, but it can also be revoked by the Project Galaxy team. (WE SHOULD GIVE EXAMPLES WHY) 
+The Galaxy Brain role is an earned role, but it can also be revoked by the Project Galaxy team. Inactivity without reason, and innapropriate behavior to users are a few reasons why it could be revoked.  
 
 Please see below the different titles for team members and community member 
 
