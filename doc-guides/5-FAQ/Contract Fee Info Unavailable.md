@@ -1,5 +1,5 @@
 ---
-sidebar_label: 'Contract Fee Unavailable'
+sidebar_label: 'Contract Fee Info Unavailable'
 sidebar_position: 2
 ---
 
