@@ -3,8 +3,6 @@ sidebar_label: 'Contract Fee Info Unavailable'
 sidebar_position: 2
 ---
 
-#What should I do when encountering a “Contract Fee is Temporarily Unavailable” error?
-
 ## Option 1: Switch your wallet to a different blockchain and then switch back to the original.
 
 ---
