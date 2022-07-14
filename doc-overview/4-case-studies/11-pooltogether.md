@@ -3,7 +3,7 @@ sidebar_label: "User Retention with PoolTogether"
 sidebar_position: 11
 ---
 
-# Case Study - Pool Together Season 1
+# Case Study - PoolTogether Season 1
 
 ## Pool Party Season 1
 
