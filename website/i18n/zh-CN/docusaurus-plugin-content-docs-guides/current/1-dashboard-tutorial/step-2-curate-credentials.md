@@ -48,7 +48,7 @@ Or check out this video for instructions: [https://youtu.be/EeE2Ngv7oEo](https:/
 
 Alternatively, you can call our credential API to skip the manual steps in the dashboard.
 
-More info [here](../../developer/guide/cred-update)
+More info [here](../../developer/guide/api-cred-items-update)
 
 ## Subgraph/GraphQL Credential Endpoint
 
