@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Examples
 
-For more information on our GraphQL endpoint, please refer to [this doc](../5-graphql-api/overview.md).
+For more information on our GraphQL endpoint, please refer to [this doc](../4-graphql-api/overview.md).
 
 ## Query NFT holders by EVM Contract
 

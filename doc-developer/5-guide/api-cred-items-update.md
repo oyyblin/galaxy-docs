@@ -9,7 +9,7 @@ sidebar_position: 1
 2. Then you will need an access token bound to your wallet address to use this API. Please go to the Project Galaxy user setting page to generate an access token.
 
 ## Endpoint
-For more information on our GraphQL endpoint, please refer to [this doc](../5-graphql-api/overview.md).
+For more information on our GraphQL endpoint, please refer to [this doc](../4-graphql-api/overview.md).
 
 ## Input
 1. (header, string, mandatory) access-token: use to auth if you have access to update credential items, the user with this access token must be the credential curator
