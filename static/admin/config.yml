@@ -1,7 +1,17 @@
+publish_mode: editorial_workflow
+
 backend:
   name: github
   branch: main
   repo: ProjectGalaxyHQ/galaxy-docs
+  open_authoring: true
+  commit_messages:
+    create: "doc({{collection}}): Create {{slug}}"
+    update: "doc({{collection}}): Update {{slug}}"
+    delete: "doc({{collection}}): Delete {{slug}}"
+    uploadMedia: "doc(media): Upload {{path}}"
+    deleteMedia: "doc(media): Delete {{path}}"
+    openAuthoring: '{{message}}'
 
 # These lines should *not* be indented
 media_folder: "static/img" # Media files will be stored in the repo under static/images/uploads
