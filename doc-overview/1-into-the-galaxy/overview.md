@@ -1,9 +1,8 @@
 ---
-sidebar_label: 'Protocol Overview'
+sidebar_label: Protocol Overview
 sidebar_position: 1
 slug: /
 ---
-
 # Overview
 
 Project Galaxy is the largest Web3 credential data network in the world. Built on open and collaborative infrastructure, Project Galaxy helps Web3 developers and projects leverage credential data to build better products and communities. At the same time, data curators are rewarded when credentials are used in Galaxy’s Application Modules, Credential Oracle Engine, and Credential API.
@@ -30,12 +29,12 @@ By contributing to Galaxy’s Credential Data Network, curators are rewarded whe
 
 To this day, over 100 partners have already launched over 500 campaigns on Project Galaxy. here are some case studies to provide more info:
 
-- **Bootstrapping Community**: [How Hashflow used Project Galaxy to turbo-charge to $600M of trading volume](https://docs.galaxy.eco/Into-The-Galaxy/3Gg3KWsGxJjFkbpjBxc6C7/Hashflow-DEX/4KodnDTqqWC13xrH1Pxmp9)
-- **Customized Voting System**: [How Project Galaxy Powered Customized Voting Strategy for MVB Program](https://www.binance.org/en/blog/mvbiii-forming-a-voting-committee-to-bring-decentralization-into-the-mvb-program/)
-- **Loyalty Program**: [Yearn Finance Introduces Woofy NFT on Project Galaxy](https://blog.galaxy.eco/yearn-finance-introduces-woofy-nfts-on-project-galaxy-95bf7ece2493)
-- **Growth Hacking Campaign**: [Project Galaxy 2021 End-of-year Rave](https://blog.galaxy.eco/growth-hacking-in-web3-2021-project-galaxy-eoy-rave-campaign-recap-946a7452930b)
+* **Bootstrapping Community**: [How Hashflow used Project Galaxy to turbo-charge to $600M of trading volume](https://docs.galaxy.eco/Into-The-Galaxy/3Gg3KWsGxJjFkbpjBxc6C7/Hashflow-DEX/4KodnDTqqWC13xrH1Pxmp9)
+* **Customized Voting System**: [How Project Galaxy Powered Customized Voting Strategy for MVB Program](https://www.binance.org/en/blog/mvbiii-forming-a-voting-committee-to-bring-decentralization-into-the-mvb-program/)
+* **Loyalty Program**: [Yearn Finance Introduces Woofy NFT on Project Galaxy](https://blog.galaxy.eco/yearn-finance-introduces-woofy-nfts-on-project-galaxy-95bf7ece2493)
+* **Growth Hacking Campaign**: [Project Galaxy 2021 End-of-year Rave](https://blog.galaxy.eco/growth-hacking-in-web3-2021-project-galaxy-eoy-rave-campaign-recap-946a7452930b)
 
-![FlowChart.png](./assets/FlowChart.png)
+![FlowChart.png](assets/FlowChart.png "Flow Chart")
 
 ## Galaxy ID
 
