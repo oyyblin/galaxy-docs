@@ -1,6 +1,6 @@
 backend:
   name: github
-  branch: feat-cms # TODO: Test and move back to main
+  branch: main
   repo: ProjectGalaxyHQ/galaxy-docs
 
 # These lines should *not* be indented
