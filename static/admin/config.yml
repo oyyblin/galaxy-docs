@@ -1,0 +1,145 @@
+backend:
+  name: github
+  branch: feat-cms # TODO: Test and move back to main
+  repo: ProjectGalaxyHQ/galaxy-docs
+
+# These lines should *not* be indented
+media_folder: "static/img" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/img/" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - name: overview_into-the-galaxy
+    label: "overview/into-the-galaxy"
+    description: "description"
+    folder: doc-overview/1-into-the-galaxy
+    identifier_field: sidebar_position
+    summary: "{{sidebar_position}} - {{sidebar_label}}"
+    extension: md
+    widget: "list"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: sidebar_label, label: Sidebar Label, widget: string }
+      - { name: sidebar_position, label: Sidebar Position, widget: number }
+      - { name: slug, label: Slug, widget: string }
+      - { name: body, label: Body, widget: markdown }
+  - name: overview_the-gal-token
+    label: "overview/the-GAL-token"
+    description: "description"
+    folder: doc-overview/2-the-GAL-token
+    identifier_field: sidebar_position
+    summary: "{{sidebar_position}} - {{sidebar_label}}"
+    extension: md
+    widget: "list"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: sidebar_label, label: Sidebar Label, widget: string }
+      - { name: sidebar_position, label: Sidebar Position, widget: number }
+      - { name: slug, label: Slug, widget: string }
+      - { name: body, label: Body, widget: markdown }
+  - name: overview_community-programs
+    label: "overview/community-programs"
+    description: "description"
+    folder: doc-overview/3-community-programs
+    identifier_field: sidebar_position
+    summary: "{{sidebar_position}} - {{sidebar_label}}"
+    extension: md
+    widget: "list"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: sidebar_label, label: Sidebar Label, widget: string }
+      - { name: sidebar_position, label: Sidebar Position, widget: number }
+      - { name: slug, label: Slug, widget: string }
+      - { name: body, label: Body, widget: markdown }
+  - name: overview_case-studies
+    label: "overview/case-studies"
+    description: "description"
+    folder: doc-overview/4-case-studies
+    identifier_field: sidebar_position
+    summary: "{{sidebar_position}} - {{sidebar_label}}"
+    extension: md
+    widget: "list"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: sidebar_label, label: Sidebar Label, widget: string }
+      - { name: sidebar_position, label: Sidebar Position, widget: number }
+      - { name: slug, label: Slug, widget: string }
+      - { name: body, label: Body, widget: markdown }
+  - name: guide_dashboard-tutorial
+    label: "guide/dashboard-tutorial"
+    description: "description"
+    folder: doc-guides/1-dashboard-tutorial
+    identifier_field: sidebar_position
+    summary: "{{sidebar_position}} - {{sidebar_label}}"
+    extension: md
+    widget: "list"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: sidebar_label, label: Sidebar Label, widget: string }
+      - { name: sidebar_position, label: Sidebar Position, widget: number }
+      - { name: slug, label: Slug, widget: string }
+      - { name: body, label: Body, widget: markdown }
+  - name: guide_user-tutorial
+    label: "guide/user-tutorial"
+    description: "description"
+    folder: doc-guides/2-user-tutorial
+    identifier_field: sidebar_position
+    summary: "{{sidebar_position}} - {{sidebar_label}}"
+    extension: md
+    widget: "list"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: sidebar_label, label: Sidebar Label, widget: string }
+      - { name: sidebar_position, label: Sidebar Position, widget: number }
+      - { name: slug, label: Slug, widget: string }
+      - { name: body, label: Body, widget: markdown }
+  - name: guide_setting-up-galaxy-id
+    label: "guide/setting-up-galaxy-id"
+    description: "description"
+    folder: doc-guides/3-setting-up-galaxy-id
+    identifier_field: sidebar_position
+    summary: "{{sidebar_position}} - {{sidebar_label}}"
+    extension: md
+    widget: "list"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: sidebar_label, label: Sidebar Label, widget: string }
+      - { name: sidebar_position, label: Sidebar Position, widget: number }
+      - { name: slug, label: Slug, widget: string }
+      - { name: body, label: Body, widget: markdown }
+  - name: guide_voting
+    label: "guide/voting"
+    description: "description"
+    folder: doc-guides/4-voting
+    identifier_field: sidebar_position
+    summary: "{{sidebar_position}} - {{sidebar_label}}"
+    extension: md
+    widget: "list"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: sidebar_label, label: Sidebar Label, widget: string }
+      - { name: sidebar_position, label: Sidebar Position, widget: number }
+      - { name: slug, label: Slug, widget: string }
+      - { name: body, label: Body, widget: markdown }
+  - name: guide_faq
+    label: "guide/faq"
+    description: "description"
+    folder: doc-guides/5-FAQ
+    identifier_field: sidebar_position
+    summary: "{{sidebar_position}} - {{sidebar_label}}"
+    extension: md
+    widget: "list"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { name: sidebar_label, label: Sidebar Label, widget: string }
+      - { name: sidebar_position, label: Sidebar Position, widget: number }
+      - { name: slug, label: Slug, widget: string }
+      - { name: body, label: Body, widget: markdown }
