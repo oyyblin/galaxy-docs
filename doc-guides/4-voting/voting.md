@@ -1,15 +1,19 @@
-# Custom Voting w/ Galaxy NFT
+---
+sidebar_label: Custom Voting with Galaxy NFT
+sidebar_position: 1
+slug: custom-voting-with-galaxy-nft
+---
+# Custom Voting with Galaxy NFT
 
 We utilize [Snapshot](https://snapshot.org/#/) for NFT voting, check the doc [Home - snapshot](https://docs.snapshot.org/) if you are unfamiliar with snapshot voting.
 
-To use NFTs claimed from Galaxy to vote, you can plug “galaxy-nft-with-score” strategy into your proposal to do so. For testing the strategy, please use the playground: [https://snapshot.org/#/playground/galaxy-nft-with-score](https://snapshot.org/#/playground/galaxy-nft-with-score)
+To use NFTs claimed from Galaxy to vote, you can plug “galaxy-nft-with-score” strategy into your proposal to do so. For testing the strategy, please use the playground: <https://snapshot.org/#/playground/galaxy-nft-with-score>
 
 1. Choose chain: we only support Polygon for now.
 2. Input Snapshot: it’s same as block number, NFT ownership is count for that block number, so the voting power won’t be changed if NFT is transferred after block number.
 3. Select the strategy from your Snapshot Space admin
 
    ![snapshot-vote.png](assets/snapshot-vote.png)
-
 4. Setup strategy parameters:
 
    ```json
@@ -51,5 +55,4 @@ To use NFTs claimed from Galaxy to vote, you can plug “galaxy-nft-with-score�
    // If user A has 2 Basic NFT and user B has 1 UMAster and 1 Alumni NFT
    // User A voting power will be 2, User B voting power will be 21
    ```
-
 5. Addresses: Input some addresses to test how much voting power the address have. You are good to go!
