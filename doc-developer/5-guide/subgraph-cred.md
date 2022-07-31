@@ -5,7 +5,7 @@ sidebar_position: 2
 # How to setup a Subgraph credential through dashboard
 
 ## Introductions
-Subgraph type credential takes a single wallet address as input and outputs 0(false)/1(true) to indicate whether the wallet address is eligible. It requires 3 fields to bet filled in: **Queries(HTTP)**, **Query** and **Expression**.
+Subgraph type credential takes a single wallet address as input and outputs 0(false)/1(true) to indicate whether the wallet address is eligible. It requires 3 fields to be filled in: **Queries(HTTP)**, **Query** and **Expression**.
 ### Queries(HTTP): 
 It's the HTTPs endpoint where Subgraph queries go to.
 ### Query: 
