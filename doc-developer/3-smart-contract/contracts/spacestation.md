@@ -3,6 +3,8 @@ sidebar_position: 1
 tags:
   - EVM
   - Smart Contract
+sidebar_label: Spacestation
+slug: spacestation
 ---
 
 # SpaceStation
