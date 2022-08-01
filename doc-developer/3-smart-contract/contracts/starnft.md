@@ -12,12 +12,15 @@ slug: starnft
 > This page is still in progress
 
 ## Contract Address:
+We have a lot of StarNFT contracts, there only list the Galaxy Space contract addresses.
 
 | Chain     | Address                                    |
 | --------- | ------------------------------------------ |
+| Ethereum  | 0x15De1bEb13D7d38Cbc493D3ecbC0c7650E715C22 |
 | Ethereum  | 0x0BE85A36ec9C8FAaf21daab71b70Fb3859BF0f8B |
-| Polygon   | 0x1871464F087dB27823Cff66Aa88599AA4815aE95 |
-| BNB Chain | 0x9F471abCddc810E561873b35b8aad7d78e21a48e |
+| Polygon   | 0x73Bc0bA23cA13Cb9A7FBeda5F661562EF985155E |
+| Polygon   | 0x50EbbEB9FE6A4F206f2C44f1E36748400b0B774A |
+| BNB Chain | 0xC3bE428a95125Fcb7a9966532f782301Dfd9311E |
 
 Sample transaction:
 
