@@ -8,8 +8,7 @@ No description
 
 ```graphql
 input MutateCredItemInput {
-  auth: Auth!
-  credId: Int!
+  credId: ID!
   operation: Operation!
   items: [String!]!
 }
@@ -18,12 +17,7 @@ input MutateCredItemInput {
 
 ### Fields
 
-#### `auth` ([`Auth`](../../references/inputs/auth))
-
-
-
-
-#### `credId` ([`Int`](../../references/scalars/int))
+#### `credId` ([`ID`](../../references/scalars/id))
 
 
 

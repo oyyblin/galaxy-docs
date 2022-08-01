@@ -46,6 +46,11 @@ type Campaign implements Node {
   gamification: Gamification!
   whitelistSubgraph: SubGraph
   isPrivate: Boolean!
+  spaceStation: SpaceStation
+  isBookmarked(
+  address: String!
+): Boolean!
+  whitelistRegions: String
   useCred: Boolean!
   claimedTimes(
   address: String!
@@ -230,6 +235,24 @@ type Campaign implements Node {
 
 
 #### `isPrivate` ([`Boolean`](../../references/scalars/boolean))
+
+
+
+
+#### `spaceStation` ([`SpaceStation`](../../references/objects/space-station))
+
+
+
+
+#### `isBookmarked` ([`Boolean`](../../references/scalars/boolean))
+
+
+- ##### `address` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `whitelistRegions` ([`String`](../../references/scalars/string))
 
 
 

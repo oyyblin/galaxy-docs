@@ -11,6 +11,7 @@ type CredSubgraph {
   endpoint: String!
   query: String!
   expression: String!
+  parameterCase: ParameterCase!
   eligible(
   address: String!
 ): Int!
@@ -31,6 +32,11 @@ type CredSubgraph {
 
 
 #### `expression` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `parameterCase` ([`ParameterCase`](../../references/enums/parameter-case))
 
 
 

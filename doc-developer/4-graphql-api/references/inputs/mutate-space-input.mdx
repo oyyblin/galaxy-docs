@@ -8,20 +8,62 @@ No description
 
 ```graphql
 input MutateSpaceInput {
-  auth: Auth!
-  space: SpaceInput!
+  id: Int
+  name: String!
+  info: String!
+  thumbnail: String!
+  alias: String!
+  weight: Int!
+  status: SpaceStatus!
+  links: String!
+  admins: [String!]
 }
 ```
 
 
 ### Fields
 
-#### `auth` ([`Auth`](../../references/inputs/auth))
+#### `id` ([`Int`](../../references/scalars/int))
 
 
 
 
-#### `space` ([`SpaceInput`](../../references/inputs/space-input))
+#### `name` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `info` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `thumbnail` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `alias` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `weight` ([`Int`](../../references/scalars/int))
+
+
+
+
+#### `status` ([`SpaceStatus`](../../references/enums/space-status))
+
+
+
+
+#### `links` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `admins` ([`String`](../../references/scalars/string))
 
 
 

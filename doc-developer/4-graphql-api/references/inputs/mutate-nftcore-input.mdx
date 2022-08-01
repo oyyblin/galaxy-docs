@@ -8,20 +8,56 @@ No description
 
 ```graphql
 input MutateNFTCoreInput {
-  auth: Auth!
-  nftCore: NFTCoreInput!
+  id: Int
+  daoId: Int!
+  chain: Chain!
+  address: String!
+  name: String!
+  symbol: String!
+  info: String!
+  transferable: Boolean!
 }
 ```
 
 
 ### Fields
 
-#### `auth` ([`Auth`](../../references/inputs/auth))
+#### `id` ([`Int`](../../references/scalars/int))
 
 
 
 
-#### `nftCore` ([`NFTCoreInput`](../../references/inputs/nftcore-input))
+#### `daoId` ([`Int`](../../references/scalars/int))
+
+
+
+
+#### `chain` ([`Chain`](../../references/enums/chain))
+
+
+
+
+#### `address` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `name` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `symbol` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `info` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `transferable` ([`Boolean`](../../references/scalars/boolean))
 
 
 

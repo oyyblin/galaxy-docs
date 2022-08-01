@@ -10,16 +10,21 @@ No description
 type Address {
   id: String!
   address: String!
+  solanaAddress: String!
   username: String!
+  avatar: String!
   hasEmail: Boolean!
   hasTwitter: Boolean!
   hasGithub: Boolean!
   hasDiscord: Boolean!
   email: String!
-  avatar: String!
-  solanaAddress: String!
   twitterUserID: String!
   twitterUserName: String!
+  githubUserID: String!
+  githubUserName: String!
+  discordUserID: String!
+  discordUserName: String!
+  accessToken: String!
   participatedCampaignIDs: [Int!]
   private(
   sig: String!
@@ -38,8 +43,10 @@ type Address {
   credentials(
   input: ListCredInput
 ): CredConnection!
+  bookmarks: [Bookmark!]
   isVerified: Boolean!
   isWhitelisted: Boolean!
+  isVerifiedTwitterOauth2: Boolean!
   nfts(
   option: ListNFTInput!
 ): NFTConnection!
@@ -65,7 +72,17 @@ type Address {
 
 
 
+#### `solanaAddress` ([`String`](../../references/scalars/string))
+
+
+
+
 #### `username` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `avatar` ([`String`](../../references/scalars/string))
 
 
 
@@ -95,22 +112,37 @@ type Address {
 
 
 
-#### `avatar` ([`String`](../../references/scalars/string))
-
-
-
-
-#### `solanaAddress` ([`String`](../../references/scalars/string))
-
-
-
-
 #### `twitterUserID` ([`String`](../../references/scalars/string))
 
 
 
 
 #### `twitterUserName` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `githubUserID` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `githubUserName` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `discordUserID` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `discordUserName` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `accessToken` ([`String`](../../references/scalars/string))
 
 
 
@@ -170,12 +202,22 @@ type Address {
 
 
 
+#### `bookmarks` ([`Bookmark`](../../references/interfaces/bookmark))
+
+
+
+
 #### `isVerified` ([`Boolean`](../../references/scalars/boolean))
 
 
 
 
 #### `isWhitelisted` ([`Boolean`](../../references/scalars/boolean))
+
+
+
+
+#### `isVerifiedTwitterOauth2` ([`Boolean`](../../references/scalars/boolean))
 
 
 

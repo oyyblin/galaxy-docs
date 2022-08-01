@@ -15,7 +15,10 @@ input ListNFTInput {
   after: String
   chain: Chain
   daoID: Int
+  campaignID: ID
   categories: [String!]
+  types: [GamificationType!]
+  chains: [Chain!]
 }
 ```
 
@@ -57,7 +60,22 @@ input ListNFTInput {
 
 
 
+#### `campaignID` ([`ID`](../../references/scalars/id))
+
+
+
+
 #### `categories` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `types` ([`GamificationType`](../../references/enums/gamification-type))
+
+
+
+
+#### `chains` ([`Chain`](../../references/enums/chain))
 
 
 

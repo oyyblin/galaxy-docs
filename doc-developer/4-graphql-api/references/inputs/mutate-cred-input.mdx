@@ -8,20 +8,98 @@ No description
 
 ```graphql
 input MutateCredInput {
-  auth: Auth!
-  cred: CredInput!
+  id: ID
+  name: String!
+  description: String!
+  chain: Chain!
+  credType: CredType!
+  referenceLink: String!
+  credSource: CredSource!
+  sourceFileUrl: String
+  credDiscordAMA: CredDiscordAMAInput
+  credSnapshot: CredSnapshotInput
+  credDiscordMember: CredDiscordMemberInput
+  credTwitter: CredTwitterInput
+  credGraphQL: CredGraphQLInput
+  credSubgraph: CredSubgraphInput
+  credGoogleSheet: CredGoogleSheetInput
 }
 ```
 
 
 ### Fields
 
-#### `auth` ([`Auth`](../../references/inputs/auth))
+#### `id` ([`ID`](../../references/scalars/id))
 
 
 
 
-#### `cred` ([`CredInput`](../../references/inputs/cred-input))
+#### `name` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `description` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `chain` ([`Chain`](../../references/enums/chain))
+
+
+
+
+#### `credType` ([`CredType`](../../references/enums/cred-type))
+
+
+
+
+#### `referenceLink` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `credSource` ([`CredSource`](../../references/enums/cred-source))
+
+
+
+
+#### `sourceFileUrl` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `credDiscordAMA` ([`CredDiscordAMAInput`](../../references/inputs/cred-discord-amainput))
+
+
+
+
+#### `credSnapshot` ([`CredSnapshotInput`](../../references/inputs/cred-snapshot-input))
+
+
+
+
+#### `credDiscordMember` ([`CredDiscordMemberInput`](../../references/inputs/cred-discord-member-input))
+
+
+
+
+#### `credTwitter` ([`CredTwitterInput`](../../references/inputs/cred-twitter-input))
+
+
+
+
+#### `credGraphQL` ([`CredGraphQLInput`](../../references/inputs/cred-graph-qlinput))
+
+
+
+
+#### `credSubgraph` ([`CredSubgraphInput`](../../references/inputs/cred-subgraph-input))
+
+
+
+
+#### `credGoogleSheet` ([`CredGoogleSheetInput`](../../references/inputs/cred-google-sheet-input))
 
 
 

@@ -8,10 +8,11 @@ No description
 
 ```graphql
 input ListCredInput {
-  ids: [Int!]
+  ids: [ID!]
   listType: ListType
   searchString: String
   userAddr: String
+  spaceId: Int
   types: [CredType!]
   chains: [Chain!]
   first: Int
@@ -22,7 +23,7 @@ input ListCredInput {
 
 ### Fields
 
-#### `ids` ([`Int`](../../references/scalars/int))
+#### `ids` ([`ID`](../../references/scalars/id))
 
 
 
@@ -38,6 +39,11 @@ input ListCredInput {
 
 
 #### `userAddr` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `spaceId` ([`Int`](../../references/scalars/int))
 
 
 

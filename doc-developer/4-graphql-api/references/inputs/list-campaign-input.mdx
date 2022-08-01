@@ -18,6 +18,10 @@ input ListCampaignInput {
   first: Int
   after: String
   status: CampaignStatus
+  isVerified: [Int!]
+  forAdmin: Boolean
+  bookmarkedBy: String
+  claimableByUser: String
 }
 ```
 
@@ -70,6 +74,26 @@ input ListCampaignInput {
 
 
 #### `status` ([`CampaignStatus`](../../references/enums/campaign-status))
+
+
+
+
+#### `isVerified` ([`Int`](../../references/scalars/int))
+
+
+
+
+#### `forAdmin` ([`Boolean`](../../references/scalars/boolean))
+
+
+
+
+#### `bookmarkedBy` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `claimableByUser` ([`String`](../../references/scalars/string))
 
 
 

@@ -8,22 +8,101 @@ No description
 
 ```graphql
 input MutateCampaignInput {
-  auth: Auth!
-  campaign: CampaignInput!
+  id: ID
+  daoId: Int!
+  nftCoreId: Int!
+  name: String!
+  description: String!
+  thumbnail: String!
+  startTime: Int
+  endTime: Int
+  status: CampaignStatus!
+  parentId: Int
+  formula: String!
+  cap: Int!
+  gasType: GasType!
+  isPrivate: Boolean!
+  type: GamificationType!
   nftTemplates: [NFTTemplateInput!]
   children: [Int!]
+  chain: Chain
 }
 ```
 
 
 ### Fields
 
-#### `auth` ([`Auth`](../../references/inputs/auth))
+#### `id` ([`ID`](../../references/scalars/id))
 
 
 
 
-#### `campaign` ([`CampaignInput`](../../references/inputs/campaign-input))
+#### `daoId` ([`Int`](../../references/scalars/int))
+
+
+
+
+#### `nftCoreId` ([`Int`](../../references/scalars/int))
+
+
+
+
+#### `name` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `description` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `thumbnail` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `startTime` ([`Int`](../../references/scalars/int))
+
+
+
+
+#### `endTime` ([`Int`](../../references/scalars/int))
+
+
+
+
+#### `status` ([`CampaignStatus`](../../references/enums/campaign-status))
+
+
+
+
+#### `parentId` ([`Int`](../../references/scalars/int))
+
+
+
+
+#### `formula` ([`String`](../../references/scalars/string))
+
+
+
+
+#### `cap` ([`Int`](../../references/scalars/int))
+
+
+
+
+#### `gasType` ([`GasType`](../../references/enums/gas-type))
+
+
+
+
+#### `isPrivate` ([`Boolean`](../../references/scalars/boolean))
+
+
+
+
+#### `type` ([`GamificationType`](../../references/enums/gamification-type))
 
 
 
@@ -34,6 +113,11 @@ input MutateCampaignInput {
 
 
 #### `children` ([`Int`](../../references/scalars/int))
+
+
+
+
+#### `chain` ([`Chain`](../../references/enums/chain))
 
 
 
