@@ -24,8 +24,6 @@ slug: spacestation
 | IoTex     | 0xc24785Ed62B06Bf4b9B304b8153969ABe39fF7BC |
 | Optimism  | 0x2e42f214467f647Fe687Fd9a2bf3BAdDFA737465 |
 
-
-
 Sample transaction:
 
 <https://etherscan.io/tx/0xac053601cffb0411a7095bc4e811492ab1ebc1e47fc17b622d898bf5b2da15ae>
@@ -36,7 +34,7 @@ Sample transaction:
 
 ## Old version SpaceStation
 
-\* These contracts may still be in use
+These contracts may still be in use
 
 | Chain     | Address                                    |
 | --------- | ------------------------------------------ |
