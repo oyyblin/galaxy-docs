@@ -3,6 +3,8 @@ sidebar_position: 2
 tags:
   - EVM
   - Smart Contract
+sidebar_label: StarNFT
+slug: starnft
 ---
 
 # StarNFT
