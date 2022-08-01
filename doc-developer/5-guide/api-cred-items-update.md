@@ -1,26 +1,32 @@
 ---
+sidebar_label: Use API to update credential Items
 sidebar_position: 1
+slug: api-cred-items-update
 ---
-
 # Use API to update credential Items
 
 ## Prerequisite
+
 1. First you need to create a credential that you want to use in your campaign. Please contact the galaxy BD team if you have no access/experience with galaxy dashboard before, they will help you to walk through the concepts of Project Galaxy dashboard and give you access.
 2. Then you will need an access token bound to your wallet address to use this API. Please go to the Project Galaxy user setting page to generate an access token.
 
 ## Endpoint
+
 For more information on our GraphQL endpoint, please refer to [this doc](../4-graphql-api/overview.md).
 
 ## Input
+
 1. (header, string, mandatory) access-token: use to auth if you have access to update credential items, the user with this access token must be the credential curator
 2. (int, mandatory) credId: the credential id you want to update
 3. (enum string, mandatory) operation:
+
    1. APPEND, append items in the list.
    2. REPLACE, remove all items and replace them with items in the list.
    3. REMOVE, remove items from the list.
 4. (string array, mandatory) items: items list(address or email) to be modified, refer to operation.
 
 ### GraphQL
+
 ```graphql
 mutation {
   credentialItems(
@@ -46,11 +52,13 @@ mutation {
 ```
 
 ## Examples
+
 ### Node.js
+
 ```typescript
 // Nodejs using Axios lib
 let axiosRes = await axios.post("https://graphigo.prd.galaxy.eco/query", {
-  operationName: "modifyCredentialItems",
+  operationName: "credentialItems",
   query: `
     mutation credentialItems($credId: ID!, $operation: Operation!, $items: [String!]!) 
       { 
