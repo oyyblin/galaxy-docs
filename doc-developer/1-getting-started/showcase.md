@@ -1,10 +1,9 @@
 ---
+sidebar_label: Showcase
 sidebar_position: 2
+slug: showcase
 ---
-
 # Showcase
-
-> TODO: Add technical details
 
 ## Collab Land: Gated chat access
 
