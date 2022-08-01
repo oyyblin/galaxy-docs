@@ -40,7 +40,7 @@ const config = {
               return `https://crowdin.com/project/docs_galaxy_eco/${locale}`;
             }
             // Link to GitHub for English docs
-            return "https://github.com/ProjectGalaxyHQ/galaxy-docs/blob/main";
+            return `https://github.com/ProjectGalaxyHQ/galaxy-docs/tree/main/doc-overview/${docPath}`;
           },
           showLastUpdateAuthor: false,
           showLastUpdateTime: true,
@@ -285,7 +285,7 @@ const config = {
             return `https://crowdin.com/project/docs_galaxy_eco/${locale}`;
           }
           // Link to GitHub for English docs
-          return "https://github.com/ProjectGalaxyHQ/galaxy-docs/blob/main";
+          return `https://github.com/ProjectGalaxyHQ/galaxy-docs/tree/main/doc-developer/${docPath}`;
         },
         showLastUpdateAuthor: false,
         showLastUpdateTime: true,
@@ -305,7 +305,7 @@ const config = {
             return `https://crowdin.com/project/docs_galaxy_eco/${locale}`;
           }
           // Link to GitHub for English docs
-          return "https://github.com/ProjectGalaxyHQ/galaxy-docs/blob/main";
+          return `https://github.com/ProjectGalaxyHQ/galaxy-docs/tree/main/doc-guides/${docPath}`;
         },
         showLastUpdateAuthor: false,
         showLastUpdateTime: true,
@@ -325,7 +325,7 @@ const config = {
             return `https://crowdin.com/project/docs_galaxy_eco/${locale}`;
           }
           // Link to GitHub for English docs
-          return "https://github.com/ProjectGalaxyHQ/galaxy-docs/blob/main";
+          return `https://github.com/ProjectGalaxyHQ/galaxy-docs/tree/main/doc-governance/${docPath}`;
         },
         showLastUpdateAuthor: false,
         showLastUpdateTime: true,
