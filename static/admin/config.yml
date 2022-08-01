@@ -222,6 +222,23 @@ collections:
       - { name: sidebar_position, label: Sidebar Position, widget: number }
       - { name: slug, label: Slug, widget: string }
       - { name: body, label: Body, widget: markdown }
+  - name: developer_smart-contract_contracts
+    label: "developer/smart-contract/contracts"
+    description: "description"
+    folder: doc-developer/3-smart-contract/contracts
+    identifier_field: sidebar_position
+    summary: "{{sidebar_position}} - {{sidebar_label}}"
+    extension: md
+    widget: "list"
+    create: true
+    slug: "{{slug}}"
+    media_folder: 'assets'
+    sortable_fields: ['sidebar_position', 'sidebar_label']
+    fields:
+      - { name: sidebar_label, label: Sidebar Label, widget: string }
+      - { name: sidebar_position, label: Sidebar Position, widget: number }
+      - { name: slug, label: Slug, widget: string }
+      - { name: body, label: Body, widget: markdown }
   - name: developer_graphql-api
     label: "developer/graphql-api"
     description: "description"
