@@ -31,7 +31,7 @@ For more information on our GraphQL endpoint, please refer to [this doc](../4-gr
 mutation {
   credentialItems(
     input: {
-      credId: 312
+      credId: "312"
       operation: APPEND
       items: [
         "0x111fd6240381af2c5f1a9e27f282bae8b92b257"
@@ -56,6 +56,10 @@ mutation {
 ### Node.js
 
 ```typescript
+const credId = "123";
+const operation = "APPEND";
+const items = ["0x123"];
+
 // Nodejs using Axios lib
 let axiosRes = await axios.post("https://graphigo.prd.galaxy.eco/query", {
   operationName: "credentialItems",
@@ -73,9 +77,10 @@ let axiosRes = await axios.post("https://graphigo.prd.galaxy.eco/query", {
       }
     `,
     variables: {
-      credId: cred_id,
+      // Make sure this is string type as int might cause overflow
+      credId: credId,
       operation: operation,
-      items: list_of_items
+      items: items
     },
   },
   {
