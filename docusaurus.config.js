@@ -96,10 +96,10 @@ const config = {
         disableSwitch: false,
         respectPrefersColorScheme: true,
       },
-      announcementBar: {
-        content:
-          "🌟 ERC20 Token Address: 0x5fAa989Af96Af85384b8a938c2EdE4A7378D9875 🌟",
-      },
+      // announcementBar: {
+      //   content:
+      //     "🌟 ERC20 Token Address: 0x5fAa989Af96Af85384b8a938c2EdE4A7378D9875 🌟",
+      // },
       navbar: {
         logo: {
           src: "img/logo-light-vert.png",
