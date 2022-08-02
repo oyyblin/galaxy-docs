@@ -1,0 +1,26 @@
+{
+  "item.label.Overview": {
+    "message": "Overview",
+    "description": "Navbar item with label Overview"
+  },
+  "item.label.Developer": {
+    "message": "Developer",
+    "description": "Navbar item with label Developer"
+  },
+  "item.label.Guides": {
+    "message": "Guides",
+    "description": "Navbar item with label Guides"
+  },
+  "item.label.Governance": {
+    "message": "Governance",
+    "description": "Navbar item with label Governance"
+  },
+  "item.label.App": {
+    "message": "App",
+    "description": "Navbar item with label App"
+  },
+  "item.label.Contact Support": {
+    "message": "Contact Support",
+    "description": "Navbar item with label Contact Support"
+  }
+}

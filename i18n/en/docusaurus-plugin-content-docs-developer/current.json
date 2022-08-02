@@ -1,0 +1,66 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Getting Started": {
+    "message": "Getting Started",
+    "description": "The label for category Getting Started in sidebar docs"
+  },
+  "sidebar.docs.category.Security": {
+    "message": "Security",
+    "description": "The label for category Security in sidebar docs"
+  },
+  "sidebar.docs.category.Smart Contract": {
+    "message": "Smart Contract",
+    "description": "The label for category Smart Contract in sidebar docs"
+  },
+  "sidebar.docs.category.Contracts": {
+    "message": "Contracts",
+    "description": "The label for category Contracts in sidebar docs"
+  },
+  "sidebar.docs.category.GraphQL API": {
+    "message": "GraphQL API",
+    "description": "The label for category GraphQL API in sidebar docs"
+  },
+  "sidebar.docs.category.References": {
+    "message": "References",
+    "description": "The label for category References in sidebar docs"
+  },
+  "sidebar.docs.category.Directives": {
+    "message": "Directives",
+    "description": "The label for category Directives in sidebar docs"
+  },
+  "sidebar.docs.category.Enums": {
+    "message": "Enums",
+    "description": "The label for category Enums in sidebar docs"
+  },
+  "sidebar.docs.category.Inputs": {
+    "message": "Inputs",
+    "description": "The label for category Inputs in sidebar docs"
+  },
+  "sidebar.docs.category.Interfaces": {
+    "message": "Interfaces",
+    "description": "The label for category Interfaces in sidebar docs"
+  },
+  "sidebar.docs.category.Mutations": {
+    "message": "Mutations",
+    "description": "The label for category Mutations in sidebar docs"
+  },
+  "sidebar.docs.category.Objects": {
+    "message": "Objects",
+    "description": "The label for category Objects in sidebar docs"
+  },
+  "sidebar.docs.category.Queries": {
+    "message": "Queries",
+    "description": "The label for category Queries in sidebar docs"
+  },
+  "sidebar.docs.category.Scalars": {
+    "message": "Scalars",
+    "description": "The label for category Scalars in sidebar docs"
+  },
+  "sidebar.docs.category.Guide": {
+    "message": "Guide",
+    "description": "The label for category Guide in sidebar docs"
+  }
+}

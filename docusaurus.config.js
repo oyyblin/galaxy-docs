@@ -143,10 +143,10 @@ const config = {
             label: "Contact Support",
             position: "right",
           },
-          // {
-          //   type: "localeDropdown",
-          //   position: "right",
-          // },
+          {
+            type: "localeDropdown",
+            position: "right",
+          },
         ],
       },
       footer: {

@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.docs.category.Into the Galaxy": {
+    "message": "Into the Galaxy",
+    "description": "The label for category Into the Galaxy in sidebar docs"
+  },
+  "sidebar.docs.category.The GAL Token": {
+    "message": "The GAL Token",
+    "description": "The label for category The GAL Token in sidebar docs"
+  },
+  "sidebar.docs.category.Community Programs": {
+    "message": "Community Programs",
+    "description": "The label for category Community Programs in sidebar docs"
+  },
+  "sidebar.docs.category.Case Studies": {
+    "message": "Case Studies",
+    "description": "The label for category Case Studies in sidebar docs"
+  }
+}

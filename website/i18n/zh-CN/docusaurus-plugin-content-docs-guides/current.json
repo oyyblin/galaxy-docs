@@ -18,5 +18,9 @@
   "sidebar.docs.category.Voting": {
     "message": "Voting",
     "description": "The label for category Voting in sidebar docs"
+  },
+  "sidebar.docs.category.FAQ": {
+    "message": "FAQ",
+    "description": "The label for category FAQ in sidebar docs"
   }
 }

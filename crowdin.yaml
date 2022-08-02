@@ -15,9 +15,9 @@ files:
     languages_mapping: *languages_mapping
 
   - source: /doc-overview/**/*
-    translation: /website/i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/**/%original_file_name%
+    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs/current/**/%original_file_name%
     languages_mapping: *languages_mapping
 
   - source: /doc-guides/**/*
-    translation: /website/i18n/%two_letters_code%/docusaurus-plugin-content-docs-guides/current/**/%original_file_name%
+    translation: /i18n/%two_letters_code%/docusaurus-plugin-content-docs-guides/current/**/%original_file_name%
     languages_mapping: *languages_mapping

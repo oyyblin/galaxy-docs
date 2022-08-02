@@ -19,10 +19,6 @@
     "message": "Contracts",
     "description": "The label for category Contracts in sidebar docs"
   },
-  "sidebar.docs.category.Guide": {
-    "message": "Guide",
-    "description": "The label for category Guide in sidebar docs"
-  },
   "sidebar.docs.category.GraphQL API": {
     "message": "GraphQL API",
     "description": "The label for category GraphQL API in sidebar docs"
@@ -62,5 +58,9 @@
   "sidebar.docs.category.Scalars": {
     "message": "Scalars",
     "description": "The label for category Scalars in sidebar docs"
+  },
+  "sidebar.docs.category.Guide": {
+    "message": "Guide",
+    "description": "The label for category Guide in sidebar docs"
   }
 }
