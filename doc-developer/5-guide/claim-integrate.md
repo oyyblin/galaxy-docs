@@ -8,11 +8,7 @@ slug: claim-integrate
 # 1. Introduction
 
 ## 1.1. Entities Diagram
-![Coming soon]
-(https://d257b89266utxb.cloudfront.net/galaxy/images/galaxy/1659682658861468090.png)
-
-
-
+![Diagram.png](https://d257b89266utxb.cloudfront.net/galaxy/images/galaxy/1659682658861468090.png)
 
 ### 1.1.1. Space
 
@@ -349,13 +345,7 @@ query {
 | Fields | Description |
 | --- | --- |
 | tx | Tx address |
-| status  | Tx status
-status enum:
-- Generated, tx is just born
-- Pending, tx is in pending
-- Success, tx is succeed
-- Queueing, tx is still in message queue
-- Failed, tx is failed |
+| status  | Tx status. Status enum: **Generated**, tx is just born; **Pending**, tx is in pending; **Success**, tx is succeed; **Queueing**, tx is still in message queue; **Failed**, tx is failed |
 
 ### 2.4.4. **Query example**
 
