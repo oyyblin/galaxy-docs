@@ -1,5 +1,7 @@
 ---
+sidebar_label: How to setup a Subgraph credential through dashboard
 sidebar_position: 2
+slug: subgraph-cred
 ---
 
 # How to setup a Subgraph credential through dashboard
