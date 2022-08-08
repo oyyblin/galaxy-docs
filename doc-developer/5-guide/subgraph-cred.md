@@ -13,7 +13,7 @@ It's the HTTPs endpoint where Subgraph queries go to.
 ### Query: 
 The GraphQL query, and it requires a single wallet address as input. For more detials, please refer to [Querying The Graph](https://thegraph.com/docs/en/querying/querying-the-graph/). In dashboard, once you finish your query, fill in a test address and click 'Run' button to check if the query's return is good.
 ### Expression: 
-A JavaScript (ES6) function with this type signature: `(object) => int`. The function should return either number 1 or 0, representing if the address is eligible for this subgraph credential.. Once you have the 'Query' output, click 'Run' button to check if it processes correctly. Behind the scenes, first, we send the query with the user's address to the GraphQL endpoint, and then we will apply the function against the 'data' field of the response. If the returned value is 1, then user can own this credential, otherwise, not. Once the query's output is good, click 'Run' button to check if expression processes query's output correctly.
+A JavaScript (ES6) function with this type signature: `(object) => int`. The function should return either number 1 or 0, representing if the address is eligible for this subgraph credential. Behind the scenes, first, we send the query with the user's address to the GraphQL endpoint, and then we will apply the function against the 'data' field of the response. If the returned value is 1, then user can own this credential, otherwise, not. Once the query's output is good, click 'Run' button to check if expression processes query's output correctly.
 
 ## Subgraph Examples
 
