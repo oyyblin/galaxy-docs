@@ -86,6 +86,23 @@ collections:
       - { name: sidebar_position, label: Sidebar Position, widget: number }
       - { name: slug, label: Slug, widget: string }
       - { name: body, label: Body, widget: markdown }
+  - name: overview_change-logs
+    label: "overview/change-logs"
+    description: "description"
+    folder: doc-overview/5-change-logs
+    identifier_field: sidebar_position
+    summary: "{{sidebar_position}} - {{sidebar_label}}"
+    extension: md
+    widget: "list"
+    create: true
+    slug: "{{slug}}"
+    media_folder: 'assets'
+    sortable_fields: ['sidebar_position', 'sidebar_label']
+    fields:
+      - { name: sidebar_label, label: Sidebar Label, widget: string }
+      - { name: sidebar_position, label: Sidebar Position, widget: number }
+      - { name: slug, label: Slug, widget: string }
+      - { name: body, label: Body, widget: markdown }
   - name: guide_dashboard-tutorial
     label: "guide/dashboard-tutorial"
     description: "description"
