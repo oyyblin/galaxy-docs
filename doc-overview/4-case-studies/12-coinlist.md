@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Case Study: Coin List"
+sidebar_label: "Case Study: CoinList"
 sidebar_position: 12
 slug: "1"
 ---
