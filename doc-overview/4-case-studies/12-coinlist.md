@@ -1,7 +1,7 @@
 ---
 sidebar_label: "Case Study: CoinList"
 sidebar_position: 12
-slug: "1"
+slug: CoinList
 ---
 # Case Study: CoinList
 
