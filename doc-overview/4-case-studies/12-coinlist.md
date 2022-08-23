@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Case Study: CoinList"
+sidebar_label: Incentivizing Engagement With CoinList
 sidebar_position: 12
 slug: CoinList
 ---
