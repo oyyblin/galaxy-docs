@@ -1,13 +1,13 @@
 ---
-sidebar_label: 'Customized Governance with BNB Chain'
+sidebar_label: Customized Governance with BNB Chain
 sidebar_position: 2
+slug: CustomizedGovernanceWithBNBChain
 ---
-
-# Customized Governance with BNB Chain
+# Case Study: Customized Governance with BNB Chain
 
 BNB Chain has collaborated with Project Galaxy to generate NFT Badges for the committee and MVB participants.
 
-Source: [https://www.binance.org/en/blog/mvbiii-forming-a-voting-committee-to-bring-decentralization-into-the-mvb-program/](https://www.binance.org/en/blog/mvbiii-forming-a-voting-committee-to-bring-decentralization-into-the-mvb-program/)
+Source: <https://www.binance.org/en/blog/mvbiii-forming-a-voting-committee-to-bring-decentralization-into-the-mvb-program/>
 
 Back in November 2021, BNB Chain collaborated with Project Galaxy to generate NFT Badges for the committee and MVB participants. The MVB program exists to accelerate the top dApps and builders in the BSC ecosystem. Over the past 3 seasons of MVB, BSC has welcomed over 900 projects, dozens of hackathons and events.
 
@@ -15,6 +15,6 @@ The committee members consists of different categories, including the BNB Chain 
 
 In the future, BNB Chain will continue to utilize Project Galaxy for the MVB program and dilute the voting power of this committee to increase decentralization and ensure a fairer and more democratic selection.
 
-See the live version of the voting page: [https://vote.bsc-mvb.io/#/](https://vote.bsc-mvb.io/#/)
+See the live version of the voting page: <https://vote.bsc-mvb.io/#/>
 
-Check out the campaign page here:  [https://galaxy.eco/bsc/campaign/GCfv8UUVJm](https://galaxy.eco/bsc/campaign/GCfv8UUVJm)
+Check out the campaign page here:  <https://galaxy.eco/bsc/campaign/GCfv8UUVJm>
