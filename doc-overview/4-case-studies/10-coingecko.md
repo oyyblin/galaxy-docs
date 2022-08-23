@@ -1,9 +1,9 @@
 ---
-sidebar_label: "Learn-to-earn with Coin Gecko"
+sidebar_label: Learn-to-earn with Coin Gecko
 sidebar_position: 10
+slug: LearnToEarnWithCoinGecko
 ---
-
-# Learn-to-earn with Coin Gecko
+# Case Study: Learn-to-earn with Coin Gecko
 
 ### “DeFi 101” NFT Campaign
 
