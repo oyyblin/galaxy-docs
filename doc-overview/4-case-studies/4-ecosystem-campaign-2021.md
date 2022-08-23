@@ -1,13 +1,13 @@
 ---
-sidebar_label: 'Galaxy Ecosystem Campaign 2021'
+sidebar_label: Galaxy Ecosystem Campaign 2021
 sidebar_position: 4
+slug: EndOfYearRave
 ---
-
-# 2021 Project Galaxy End-of-year Rave Case Study
+# Case Study: 2021 Project Galaxy End-of-year Rave 
 
 During Christmas, Project Galaxy, along with our ecosystem partners, has organized a rave to show our appreciation to the community members and were overwhelmed with the support from all of our communities member, with 7,212 community members claiming the Galaxy Girl and Reindeer NFT.
 
-Source: [https://blog.galaxy.eco/growth-hacking-in-web3-2021-project-galaxy-eoy-rave-campaign-recap-946a7452930b](https://blog.galaxy.eco/growth-hacking-in-web3-2021-project-galaxy-eoy-rave-campaign-recap-946a7452930b)
+Source: <https://blog.galaxy.eco/growth-hacking-in-web3-2021-project-galaxy-eoy-rave-campaign-recap-946a7452930b>
 
 ### End of Year Rave
 
