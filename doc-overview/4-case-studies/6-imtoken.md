@@ -1,9 +1,9 @@
 ---
-sidebar_label: 'Community Engagement with ImToken'
+sidebar_label: Community Engagement with ImToken
 sidebar_position: 6
+slug: CommunityEngagementWithImToken
 ---
-
-# Community Engagement with ImToken
+# Case Study: Community Engagement with ImToken
 
 ### The Gift from imToken
 
@@ -34,7 +34,6 @@ A total of 3091 OATs were claimed - averaging over 770 per individual OAT. The c
 ### **About imToken**
 
 imToken is a decentralized digital wallet used to manage and safeguard a wide range of blockchain- and token-based assets, identities and data. Since its founded in 2016, it has helped its users transact and exchange billions of dollars in value across more than 150 countries around the world. imToken allows its users to manage assets on 20+ mainstream blockchains, as well as seamlessly connect with DApps via a decentralized applications browser.
-
 
 **OAT**
 
