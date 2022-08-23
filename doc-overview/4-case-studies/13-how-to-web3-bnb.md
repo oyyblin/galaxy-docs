@@ -1,6 +1,7 @@
 ---
-sidebar_label: "Case Study: How to Web3 on BNB Chain"
+sidebar_label: Community Engagement Through The Integration Of The BNB Chain
 sidebar_position: 13
+slug: web3onbnb
 ---
 
 # Case Study: How to Web3 on BNB Chain
