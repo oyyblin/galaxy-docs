@@ -1,9 +1,9 @@
 ---
-sidebar_label: "Loyalty Program with Zk.Link"
+sidebar_label: Loyalty Program with Zk.Link
 sidebar_position: 8
+slug: LoyaltyProgramWithZk.Link
 ---
-
-# Loyalty Program with Zk.Link
+# Case Study: Loyalty Program with Zk.Link
 
 ## Challenge
 
