@@ -1,9 +1,9 @@
 ---
-sidebar_label: 'NFT Marketplace Growth with Polygon'
+sidebar_label: NFT Marketplace Growth with Polygon
 sidebar_position: 5
+slug: NFTMarketplaceGrowth
 ---
-
-# NFT Marketplace Growth with OpenSea on Polygon
+# Case Study: NFT Marketplace Growth with OpenSea on Polygon
 
 ### The Polygon Genesis Creator
 
@@ -31,7 +31,7 @@ A total of 131,074 mystery box NFTs were minted. Over 9060 unique users forged a
 
 **About Polygon**
 
-Polygon is the leading platform for Ethereum scaling and infrastructure development. Its growing suite of products offers developers easy access to all major scaling and infrastructure solutions: L2 solutions (ZK Rollups and Optimistic Rollups), sidechains, hybrid solutions, stand-alone and enterprise chains, data availability solutions, and more. Polygon’s scaling solutions have seen widespread adoption with 3000+ applications hosted, ~600M total transactions processed, ~60M unique user addresses, and $5B+ in assets secured.   
+Polygon is the leading platform for Ethereum scaling and infrastructure development. Its growing suite of products offers developers easy access to all major scaling and infrastructure solutions: L2 solutions (ZK Rollups and Optimistic Rollups), sidechains, hybrid solutions, stand-alone and enterprise chains, data availability solutions, and more. Polygon’s scaling solutions have seen widespread adoption with 3000+ applications hosted, \~600M total transactions processed, \~60M unique user addresses, and $5B+ in assets secured.   
 
 **Project Galaxy** **OAT**
 
