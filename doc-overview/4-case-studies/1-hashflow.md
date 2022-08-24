@@ -34,7 +34,7 @@ At Lattice, we spend a lot of time monitoring community sentiment to understand 
 
 Despite those compelling advantages, growing trading volume can be a challenge as crypto traders have many other options, both centralized and decentralized, and it is especially challenging when you don't have a governance token to juice activity.
 
-## The Hashflow <> Galaxy Story
+## The Hashflow x Galaxy Story
 
 Hashflow not having a token early led to some questioning from early community members. Even months before the release of their closed alpha product, most of them tended to be skeptical about the advantages of being an early user, even if the core team ensured they were having discussions about potential mechanics to reward early contributors.
 
